@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Annäherung zweier Wasserstoffatome</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #050505; color: #f4f4f4; font-family: Arial, Helvetica, sans-serif; }
+    body { display: grid; place-items: center; padding: 14px; }
+    .app { width: min(1050px, 100%); user-select: none; }
+    svg { display: block; width: 100%; height: auto; touch-action: none; }
+    .grid { stroke: #555; stroke-width: 1; }
+    .axis { stroke: #f1f1f1; stroke-width: 2.5; }
+    .zero { stroke: #d9d9d9; stroke-width: 2; }
+    .curve { fill: none; stroke: #ff3b30; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    .label { fill: #fff; font-size: 25px; }
+    .hint { fill: #d7d7d7; font-size: 19px; }
+    .marker-line { stroke: #ffd65a; stroke-width: 3; }
+    .marker-dot { fill: #ffd65a; stroke: #fff3bd; stroke-width: 2; }
+    .distance-line { stroke: #f3f3f3; stroke-width: 2; stroke-dasharray: 6 7; opacity: .8; }
+    .atom-hit { cursor: grab; }
+    .atom-hit.dragging { cursor: grabbing; }
+    @media (max-width: 620px) {
+      .label { font-size: 29px; }
+      .hint { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <svg id="scene" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
+      <title id="title">Annäherung zweier Wasserstoffatome und zugehörige Energie</title>
+      <desc id="desc">Das rechte Wasserstoffatom lässt sich horizontal bewegen. Ein Pfeil zeigt gleichzeitig die zugehörige Stelle auf der Energiekurve.</desc>
+      <defs>
+        <radialGradient id="atomGlow" cx="42%" cy="42%" r="62%">
+          <stop offset="0" stop-color="#ff7a31" stop-opacity=".98"/>
+          <stop offset=".22" stop-color="#bc4319" stop-opacity=".92"/>
+          <stop offset=".66" stop-color="#79280f" stop-opacity=".72"/>
+          <stop offset="1" stop-color="#401508" stop-opacity=".30"/>
+        </radialGradient>
+        <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="8"/>
+        </filter>
+        <marker id="arrowHead" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd65a"/>
+        </marker>
+      </defs>
+
+      <g aria-hidden="true">
+        <line class="grid" x1="120" y1="55" x2="120" y2="425"/>
+        <line class="grid" x1="300" y1="55" x2="300" y2="425"/>
+        <line class="grid" x1="480" y1="55" x2="480" y2="425"/>
+        <line class="grid" x1="660" y1="55" x2="660" y2="425"/>
+        <line class="grid" x1="840" y1="55" x2="840" y2="425"/>
+        <line class="grid" x1="120" y1="55" x2="930" y2="55"/>
+        <line class="grid" x1="120" y1="148" x2="930" y2="148"/>
+        <line class="grid" x1="120" y1="240" x2="930" y2="240"/>
+        <line class="grid" x1="120" y1="332" x2="930" y2="332"/>
+        <line class="grid" x1="120" y1="425" x2="930" y2="425"/>
+      </g>
+
+      <line class="axis" x1="120" y1="425" x2="950" y2="425"/>
+      <line class="axis" x1="120" y1="425" x2="120" y2="35"/>
+      <polygon points="120,24 110,43 130,43" fill="#f1f1f1"/>
+      <polygon points="962,425 941,414 941,436" fill="#f1f1f1"/>
+      <line class="zero" x1="120" y1="240" x2="930" y2="240"/>
+      <text class="label" x="105" y="248" text-anchor="end">0</text>
+      <text class="label" x="525" y="468" text-anchor="middle">Abstand der Atome</text>
+      <text class="label" x="56" y="240" text-anchor="middle" transform="rotate(-90 56 240)">Energie</text>
+      <path id="energyCurve" class="curve" d=""/>
+
+      <g id="energyMarker" aria-hidden="true">
+        <line id="markerArrow" class="marker-line" x1="0" y1="0" x2="0" y2="0" marker-end="url(#arrowHead)"/>
+        <circle id="markerDot" class="marker-dot" cx="0" cy="0" r="7"/>
+      </g>
+
+      <text class="hint" x="500" y="510" text-anchor="middle">Bewege das rechte Wasserstoffatom</text>
+      <line id="distanceLine" class="distance-line" x1="280" y1="623" x2="720" y2="623"/>
+
+      <g id="fixedAtom" transform="translate(280 615)" aria-hidden="true">
+        <circle r="91" fill="#8a2d10" opacity=".28" filter="url(#softGlow)"/>
+        <circle r="82" fill="url(#atomGlow)"/>
+        <circle r="10" fill="#ff7642" opacity=".95"/>
+      </g>
+
+      <g id="movingAtom" class="atom-hit" transform="translate(720 615)" role="slider" tabindex="0" aria-label="Abstand des beweglichen Wasserstoffatoms" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62">
+        <circle r="104" fill="transparent"/>
+        <circle r="91" fill="#8a2d10" opacity=".28" filter="url(#softGlow)"/>
+        <circle r="82" fill="url(#atomGlow)"/>
+        <circle r="10" fill="#ff7642" opacity=".95"/>
+      </g>
+    </svg>
+  </main>
+
+  <script>
+    (() => {
+      const svg = document.getElementById('scene');
+      const curve = document.getElementById('energyCurve');
+      const moving = document.getElementById('movingAtom');
+      const markerDot = document.getElementById('markerDot');
+      const markerArrow = document.getElementById('markerArrow');
+      const distanceLine = document.getElementById('distanceLine');
+
+      const graph = { left: 145, right: 925, zeroY: 240, scaleY: 105 };
+      const atom = { fixedX: 280, y: 615, minX: 365, maxX: 900 };
+      const plotMinR = 1.42;
+      const maxR = 5.8;
+      let movingX = 720;
+      let dragging = false;
+
+      // Morse-like potential: steep repulsion, energy minimum, then approach to zero.
+      function energy(r) {
+        const equilibrium = 1.85;
+        const steepness = 2.2;
+        const depth = 1.0;
+        const q = Math.exp(-steepness * (r - equilibrium));
+        return depth * ((1 - q) * (1 - q) - 1);
+      }
+
+      function graphX(r) {
+        return graph.left + (r - plotMinR) / (maxR - plotMinR) * (graph.right - graph.left);
+      }
+
+      function graphY(e) {
+        return graph.zeroY - e * graph.scaleY;
+      }
+
+      function distanceToR(x) {
+        return plotMinR + (x - atom.minX) / (atom.maxX - atom.minX) * (maxR - plotMinR);
+      }
+
+      function makeCurve() {
+        const parts = [];
+        for (let i = 0; i <= 260; i++) {
+          const r = plotMinR + i / 260 * (maxR - plotMinR);
+          const y = graphY(energy(r));
+          parts.push(`${i ? 'L' : 'M'} ${graphX(r).toFixed(2)} ${y.toFixed(2)}`);
+        }
+        curve.setAttribute('d', parts.join(' '));
+      }
+
+      function update() {
+        moving.setAttribute('transform', `translate(${movingX} ${atom.y})`);
+        distanceLine.setAttribute('x2', movingX);
+        const r = distanceToR(movingX);
+        const x = graphX(r);
+        const y = Math.max(60, Math.min(420, graphY(energy(r))));
+        markerDot.setAttribute('cx', x);
+        markerDot.setAttribute('cy', y);
+        markerArrow.setAttribute('x1', x);
+        markerArrow.setAttribute('y1', Math.max(58, y - 64));
+        markerArrow.setAttribute('x2', x);
+        markerArrow.setAttribute('y2', y - 11);
+        const percentage = Math.round((movingX - atom.minX) / (atom.maxX - atom.minX) * 100);
+        moving.setAttribute('aria-valuenow', percentage);
+      }
+
+      function localX(event) {
+        const point = svg.createSVGPoint();
+        point.x = event.clientX;
+        point.y = event.clientY;
+        return point.matrixTransform(svg.getScreenCTM().inverse()).x;
+      }
+
+      moving.addEventListener('pointerdown', event => {
+        dragging = true;
+        moving.classList.add('dragging');
+        moving.setPointerCapture(event.pointerId);
+      });
+      moving.addEventListener('pointermove', event => {
+        if (!dragging) return;
+        movingX = Math.max(atom.minX, Math.min(atom.maxX, localX(event)));
+        update();
+      });
+      moving.addEventListener('pointerup', event => {
+        dragging = false;
+        moving.classList.remove('dragging');
+        moving.releasePointerCapture(event.pointerId);
+      });
+      moving.addEventListener('pointercancel', () => {
+        dragging = false;
+        moving.classList.remove('dragging');
+      });
+      moving.addEventListener('keydown', event => {
+        if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+        event.preventDefault();
+        movingX += event.key === 'ArrowRight' ? 10 : -10;
+        movingX = Math.max(atom.minX, Math.min(atom.maxX, movingX));
+        update();
+      });
+
+      makeCurve();
+      update();
+    })();
+  </script>
+</body>
+</html>
