@@ -8,8 +8,11 @@
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
     html, body { margin: 0; min-height: 100%; background: #050505; color: #f4f4f4; font-family: Arial, Helvetica, sans-serif; }
-    body { display: grid; place-items: center; padding: 14px; }
-    .app { width: min(1050px, 100%); user-select: none; }
+    body { display: grid; place-items: center; padding: 8px; }
+    .app {
+      width: min(820px, 100%, calc((100vh - 16px) * 1.6129));
+      user-select: none;
+    }
     svg { display: block; width: 100%; height: auto; touch-action: none; }
     .grid { stroke: #555; stroke-width: 1; }
     .axis { stroke: #f1f1f1; stroke-width: 2.5; }
@@ -30,7 +33,7 @@
 </head>
 <body>
   <main class="app">
-    <svg id="scene" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
+    <svg id="scene" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
       <title id="title">Annäherung zweier Wasserstoffatome und zugehörige Energie</title>
       <desc id="desc">Das rechte Wasserstoffatom lässt sich horizontal bewegen. Ein Pfeil zeigt gleichzeitig die zugehörige Stelle auf der Energiekurve.</desc>
       <defs>
@@ -76,20 +79,19 @@
         <circle id="markerDot" class="marker-dot" cx="0" cy="0" r="7"/>
       </g>
 
-      <text class="hint" x="500" y="510" text-anchor="middle">Bewege das rechte Wasserstoffatom</text>
-      <line id="distanceLine" class="distance-line" x1="280" y1="623" x2="720" y2="623"/>
+      <line id="distanceLine" class="distance-line" x1="280" y1="518" x2="720" y2="518"/>
 
-      <g id="fixedAtom" transform="translate(280 615)" aria-hidden="true">
-        <circle r="91" fill="#8a2d10" opacity=".28" filter="url(#softGlow)"/>
-        <circle r="82" fill="url(#atomGlow)"/>
-        <circle r="10" fill="#ff7642" opacity=".95"/>
+      <g id="fixedAtom" transform="translate(280 510)" aria-hidden="true">
+        <circle r="80" fill="#8a2d10" opacity=".28" filter="url(#softGlow)"/>
+        <circle r="72" fill="url(#atomGlow)"/>
+        <circle r="8" fill="#ff7642" opacity=".95"/>
       </g>
 
-      <g id="movingAtom" class="atom-hit" transform="translate(720 615)" role="slider" tabindex="0" aria-label="Abstand des beweglichen Wasserstoffatoms" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62">
-        <circle r="104" fill="transparent"/>
-        <circle r="91" fill="#8a2d10" opacity=".28" filter="url(#softGlow)"/>
-        <circle r="82" fill="url(#atomGlow)"/>
-        <circle r="10" fill="#ff7642" opacity=".95"/>
+      <g id="movingAtom" class="atom-hit" transform="translate(720 510)" role="slider" tabindex="0" aria-label="Abstand des beweglichen Wasserstoffatoms" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62">
+        <circle r="90" fill="transparent"/>
+        <circle r="80" fill="#8a2d10" opacity=".28" filter="url(#softGlow)"/>
+        <circle r="72" fill="url(#atomGlow)"/>
+        <circle r="8" fill="#ff7642" opacity=".95"/>
       </g>
     </svg>
   </main>
@@ -104,7 +106,7 @@
       const distanceLine = document.getElementById('distanceLine');
 
       const graph = { left: 145, right: 925, zeroY: 240, scaleY: 105 };
-      const atom = { fixedX: 280, y: 615, minX: 365, maxX: 900 };
+      const atom = { fixedX: 280, y: 510, minX: 365, maxX: 900 };
       const plotMinR = 1.42;
       const maxR = 5.8;
       let movingX = 720;
