@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alkane & Cycloalkane – Nomenklaturtrainer</title>
+<style>
+:root{--bg:#f4f7fb;--paper:#fff;--ink:#17243a;--sub:#617089;--line:#dfe7f0;--teal:#087e89;--teal-soft:#e6f6f6;--orange:#d97706;--purple:#7854c8;--pink:#ca477d;--good:#14805e;--bad:#bf4545;--blue:#3058bf;--shadow:0 12px 32px rgba(25,50,92,.07)}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:radial-gradient(ellipse 70% 40% at 85% 0,#e8f7f9,transparent),var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif;line-height:1.45}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.47}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #6ab9c5;outline-offset:2px}.wrap{max-width:1240px;margin:auto;padding:24px 22px 36px}.top{display:flex;gap:16px;justify-content:space-between;align-items:center;margin-bottom:19px;flex-wrap:wrap}.eyebrow{font-size:11px;font-weight:850;color:var(--teal);letter-spacing:2px;text-transform:uppercase}.brand h1{font-size:clamp(22px,3vw,32px);letter-spacing:-.9px;margin:0;font-weight:850}.brand h1 span{color:var(--teal)}.brand p{margin:3px 0 0;color:var(--sub);font-size:13px}.topright{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.pill{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:99px;padding:5px;font-size:13px;gap:3px}.pill button{border:0;background:none;border-radius:99px;padding:8px 14px;color:#51627c;font-weight:750}.pill button[aria-pressed=true]{background:var(--teal);color:white}.smallbtn{border:1px solid var(--line);background:white;color:#2b415e;padding:11px 14px;border-radius:11px;font-weight:750}.layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:18px}.content{min-width:0}.panel{background:var(--paper);border:1px solid #e5ebf3;border-radius:19px;box-shadow:var(--shadow)}.molecule-panel{padding:23px 23px 16px}.sectionhead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.stepmark{display:inline-block;background:#edf2fc;color:#4d659a;border-radius:7px;font-size:11px;font-weight:850;padding:5px 9px;letter-spacing:.5px}.sectionhead h2{margin:8px 0 0;font-size:20px;letter-spacing:-.4px}.sectionhead p{margin:3px 0 0;color:var(--sub);font-size:13px}.molecule-svg{width:100%;height:clamp(235px,29vw,315px);display:block;overflow:visible;touch-action:manipulation}.molwrap{display:flex;align-items:center;justify-content:center;margin:0 0 2px;min-width:0}.bond{stroke:#283246;stroke-width:4.5;stroke-linecap:round}.bond.main{stroke:var(--teal);stroke-width:7}.bond.chosen{stroke:#17b5c0;stroke-width:8.5}.bond.sub0{stroke:var(--orange);stroke-width:6.5}.bond.sub1{stroke:var(--purple);stroke-width:6.5}.bond.sub2{stroke:var(--pink);stroke-width:6.5}.bond.dim{stroke:#b5c1d2;stroke-width:3}.carbon-hover{cursor:pointer;fill:transparent}.carbon-hover:hover,.carbon-hover:focus{fill:rgba(37,153,170,.12);stroke:rgba(37,153,170,.45);stroke-width:2}.carb-on{fill:white;stroke:#2995a4;stroke-width:2}.carb-selected{fill:#0ba7b1;stroke:#fff;stroke-width:2}.cnumber{font-size:15px;font-weight:800;fill:#1a66a7;paint-order:stroke;stroke:white;stroke-width:5;stroke-linejoin:round}.endlabel{font-size:12px;font-weight:900;fill:white}.empty-state{color:var(--sub)}.legend{min-height:26px;display:flex;flex-wrap:wrap;gap:13px;font-size:12px;color:var(--sub);border-top:1px dashed var(--line);padding:12px 0 0}.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}.answerpanel{padding:21px 23px 20px;margin-top:17px}.answerpanel label{font-weight:800;display:block;margin-bottom:9px;font-size:15px}.answerrow{display:flex;gap:9px}.answerrow input{flex:1;min-width:0;border:1.5px solid #d8e3ee;padding:13px 15px;border-radius:11px;font-size:18px;letter-spacing:.15px}.primary{background:var(--teal);color:white;border:1px solid var(--teal);border-radius:11px;padding:12px 18px;font-weight:800}.primary:hover:not(:disabled){background:#066b75}.secondary{background:white;color:var(--teal);border:1.5px solid #9ad4d7;border-radius:11px;padding:11px 15px;font-weight:800}.secondary:hover:not(:disabled){background:var(--teal-soft)}.subtext{font-size:12px;color:var(--sub);margin:8px 0 0}.feedback{display:none;border-radius:12px;margin-top:14px;padding:13px 15px;font-size:14px;border:1px solid transparent;line-height:1.55}.feedback.show{display:block}.feedback.good{background:#eaf8f1;color:#116344;border-color:#bfe8d3}.feedback.bad{background:#fff3f2;color:#953c3a;border-color:#fad0ce}.feedback.info{background:#eef5fe;color:#2a5385;border-color:#cee2fa}.feedback strong{display:block;margin-bottom:4px}.helppanel{margin-top:17px;padding:20px 23px}.helphead{display:flex;align-items:center;justify-content:space-between;gap:14px}.helphead h2{font-size:18px;margin:0 0 3px}.helphead p{font-size:13px;color:var(--sub);margin:0}.hintbody{border-top:1px solid var(--line);margin-top:17px;padding-top:16px;display:none}.hintbody.open{display:block}.hintstep{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:15px}.hintstep span{background:#edf1f7;color:#6a7991;border-radius:8px;padding:7px 11px;font-size:12px;font-weight:750}.hintstep span.now{background:var(--teal);color:white}.hintstep span.done{background:#e4f5ec;color:#26825f}.helpcontent h3{font-size:17px;margin:0 0 7px}.helpcontent p{color:#576881;margin:0 0 13px;font-size:14px}.helpsmall{color:var(--sub);font-size:12px}.counter{padding:9px 12px;border-radius:9px;background:#f3f6fa;color:#51637c;font-size:13px;font-weight:700;display:inline-block;margin:5px 0 12px}.choices{display:flex;flex-wrap:wrap;gap:9px}.choice{border:1.5px solid #d6e0ed;background:white;border-radius:10px;padding:10px 13px;font-weight:800;color:#405571}.choice:hover{border-color:#76b6c0;background:#f0fafa}.choice.active{background:var(--teal-soft);border-color:var(--teal);color:var(--teal)}.helprow{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:13px}.branch-edit{display:flex;gap:10px;flex-wrap:wrap;align-items:end;border-radius:12px;background:#f4f7fb;padding:13px;margin:8px 0}.branch-edit label{font-size:12px;font-weight:750;color:#546683;display:block;margin:0 0 5px}.branch-edit select,.builder select{border:1px solid #cfdce9;border-radius:9px;background:white;padding:9px 12px;font-weight:700;min-width:100px}.branch-edit .selectedname{font-weight:800;color:var(--teal)}.taglist{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}.tag{display:inline-flex;background:#eef6f5;border:1px solid #cae7e5;border-radius:9px;padding:7px 10px;font-size:13px;color:#1d6872;font-weight:750}.helpnote{border-left:3px solid var(--teal);background:#f0f8f8;padding:9px 12px;color:#365d6c;font-size:13px;margin-bottom:11px}.microfeedback{margin-top:10px;font-size:13px;color:#986027;min-height:20px;font-weight:650}.builder{display:grid;gap:9px}.builder-row{display:flex;flex-wrap:wrap;gap:9px;align-items:center;padding:9px 12px;border:1px solid var(--line);border-radius:11px;background:#fcfdff}.builder-row .itemloc{color:#526581;min-width:85px;font-weight:850}.builder-row .itemname{font-weight:850;min-width:64px}.builder-row .move{border:1px solid #d4e1ed;background:white;border-radius:8px;padding:6px 10px;color:#465e78}.builder-row select{min-width:80px}.preview{background:#edf8f8;padding:12px 15px;border-radius:11px;color:#165e68;margin:14px 0 4px;overflow-wrap:anywhere}.preview strong{font-size:18px;letter-spacing:.2px}.aside{min-width:0}.progresspanel{padding:21px 19px;text-align:center;position:relative;overflow:hidden}.progresspanel h2{text-align:left;margin:0;font-size:17px}.progresspanel .progress-sub{text-align:left;color:var(--sub);font-size:12px;margin:4px 0 2px}.tubecontainer{position:relative;height:290px;display:flex;justify-content:center;align-items:center}.tube{width:108px;height:218px;position:relative;border:6px solid #a2bcc6;border-top:0;border-radius:0 0 55px 55px;overflow:hidden;background:linear-gradient(100deg,#e2f2f7 0%,#fff 28%,#d3e6eb 100%);box-shadow:inset 6px 1px 8px rgba(44,78,90,.13),7px 5px 15px rgba(43,80,112,.1)}.tube.celebrate{animation:popglass .95s ease-in forwards;transform-origin:50% 65%}@keyframes popglass{0%{transform:scale(1);filter:brightness(1);opacity:1}35%{transform:scale(1.23) rotate(-3deg);filter:brightness(1.8);opacity:1}65%{transform:scale(1.35) rotate(4deg);filter:brightness(2.5);opacity:.65}100%{transform:scale(.65);filter:brightness(2);opacity:0}}.tube::before{content:"";position:absolute;width:120px;height:13px;left:-12px;top:0;z-index:4;border:5px solid #a2bcc6;border-radius:8px;background:linear-gradient(#fbffff,#c5dfe7);transform:translateY(-1px)}.tubelip{position:absolute;width:125px;height:17px;left:50%;top:33px;transform:translateX(-50%);border:5px solid #a2bcc6;border-radius:10px;background:#e5f3f7;z-index:6;box-shadow:0 2px 3px #e4eaf4}.liquid{position:absolute;bottom:0;left:0;right:0;height:0%;transition:height 1s cubic-bezier(.2,.9,.2,1);background:linear-gradient(95deg,#17b8c1,#24caa4 40%,#079594);border-radius:0 0 45px 45px;box-shadow:inset -12px 0 20px rgba(0,63,97,.18)}.liquid::before{content:"";position:absolute;top:-5px;height:10px;border-radius:50%;background:#52e1d5;left:0;right:0;opacity:.9}.shine{position:absolute;z-index:3;left:13px;top:18px;width:12px;height:160px;border-radius:30px;background:linear-gradient(180deg,rgba(255,255,255,.8),rgba(255,255,255,.08))}.bubble{position:absolute;bottom:-15px;border-radius:50%;background:rgba(255,255,255,.55);animation:rise 2.8s linear infinite;display:none}.liquid[style*="height: 0%"] .bubble{display:none}@keyframes rise{from{transform:translateY(0);opacity:0}20%{opacity:1}to{transform:translateY(-205px);opacity:0}}.tube-score{font-size:29px;font-weight:900;color:var(--teal);line-height:1}.tube-caption{font-size:12px;color:var(--sub);margin:5px 0 15px}.segbar{display:grid;grid-template-columns:repeat(8,1fr);gap:5px}.segbar span{height:10px;border-radius:50px;background:#e3ebf1}.segbar span.full{background:linear-gradient(90deg,#2ccab6,#0b98a7)}.info-panel{padding:19px;margin-top:17px}.info-panel h3{font-size:15px;margin:0 0 8px}.info-panel p{font-size:13px;line-height:1.55;color:var(--sub);margin:0 0 8px}.info-panel details{font-size:12px;color:#586a80;margin-top:11px}.info-panel summary{font-weight:800;cursor:pointer;color:#3e6470}.info-panel a{color:var(--teal)}.leveltag{background:#f4eee2;color:#97681d;border-radius:8px;font-size:11px;letter-spacing:.2px;padding:5px 8px;font-weight:850}.complete{display:none;text-align:center;position:absolute;inset:0;background:rgba(255,255,255,.96);border-radius:19px;z-index:10;align-items:center;justify-content:center;flex-direction:column;padding:20px}.complete.show{display:flex}.complete .big{font-size:60px;line-height:1}.complete h2{font-size:24px;margin:9px 0 4px}.complete p{color:var(--sub);font-size:14px}#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:99}footer{text-align:center;color:#8998ad;font-size:11px;margin-top:22px}body[data-stage="0"] #molSvg{cursor:crosshair}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}@media(max-width:880px){.layout{grid-template-columns:minmax(0,1fr)}.aside{display:grid;grid-template-columns:1fr 1fr;gap:16px}.info-panel{margin-top:0}.tubecontainer{height:185px}.tube{height:138px;width:76px;border-radius:0 0 40px 40px}.tubelip{top:19px;width:90px}.shine{height:90px}.progresspanel{padding:17px}.answerrow{flex-wrap:wrap}.molecule-svg{height:260px}}@media(max-width:570px){.wrap{padding:14px 10px 24px}.molecule-panel,.answerpanel,.helppanel{padding:17px 14px}.sectionhead h2{font-size:18px}.molecule-svg{height:235px}.answerrow .primary{width:100%}.aside{grid-template-columns:1fr}.progresspanel{display:grid;grid-template-columns:1fr 1fr;align-items:center}.progresspanel h2,.progresspanel .progress-sub{grid-column:1/-1}.tubecontainer{grid-row:3/6;height:145px}.tubelip{top:15px}.tube-score,.tube-caption,.segbar{grid-column:2}.tube-score{grid-row:3}.tube-caption{grid-row:4}.segbar{grid-row:5}.legend{font-size:11px}.helphead{align-items:flex-start}.helphead button{white-space:nowrap}}
+
+/* Kompakte Desktop-Darstellung: die ganze Arbeitsfläche bleibt im Viewport. */
+@media (min-width:881px) and (min-height:600px){
+ html,body{height:100%;overflow:hidden}
+ .wrap{height:100dvh;max-width:1500px;display:flex;flex-direction:column;padding:9px 16px 12px;overflow:hidden}
+ .top{flex:0 0 auto;margin-bottom:9px;gap:10px}
+ .brand{display:flex;align-items:center;gap:14px}.brand h1{font-size:20px;letter-spacing:-.3px}
+ .pill button{padding:7px 12px}.smallbtn{padding:9px 12px}
+ .layout{flex:1;min-height:0;grid-template-columns:minmax(0,1fr) 222px;gap:12px}
+ .content{min-height:0;display:flex;flex-direction:column;gap:9px}
+ .panel{border-radius:14px}
+ .molecule-panel{flex:1 1 auto;min-height:175px;padding:11px 16px 7px;display:flex;flex-direction:column;overflow:hidden}
+ .sectionhead{flex:none;align-items:center}.sectionhead h2{font-size:17px;margin:3px 0 0}.sectionhead p{font-size:11px;margin:0}
+ .stepmark{font-size:10px;padding:2px 7px}
+ .molwrap{flex:1;min-height:0;height:0;margin:0}.molecule-svg{width:100%;height:100%;min-height:0;overflow:visible}
+ .legend{min-height:19px;padding:5px 0 0;gap:9px;font-size:11px;flex:none}
+ .answerpanel{padding:10px 16px;flex:0 0 auto;margin:0}
+ .answerpanel label{margin:0 0 5px;font-size:13px}
+ .answerrow input{padding:7px 11px;font-size:16px}
+ .primary,.secondary{padding:8px 12px;border-radius:9px;font-size:13px}
+ .feedback{font-size:12px;line-height:1.3;padding:6px 11px;margin-top:7px}.feedback strong{margin-bottom:1px}
+ .helppanel{padding:10px 16px;flex:0 0 auto;min-height:0;margin:0;overflow:hidden}
+ .helphead h2{font-size:15px}.hintbody{margin-top:7px;padding-top:8px}
+ .hintstep{margin-bottom:8px;gap:4px}.hintstep span{padding:4px 7px;font-size:11px}
+ .helpcontent h3{font-size:14px;margin:0 0 4px}.helpcontent p{font-size:12px;margin:0 0 7px}
+ .counter{padding:5px 9px;font-size:12px;margin:3px 0 6px}
+ .choices{gap:6px}.choice{padding:6px 9px;font-size:12px}.helprow{margin-top:6px}
+ .branch-edit{padding:8px;margin:4px 0;gap:7px}.branch-edit select,.builder select{padding:5px 9px;font-size:12px;min-width:80px}
+ .builder{gap:5px}.builder-row{padding:5px 9px;gap:5px}.builder-row .move{padding:3px 8px}
+ .tag{font-size:11px;padding:4px 7px}.taglist{margin-top:5px}
+ .preview{padding:7px 10px;margin:7px 0 3px}.preview strong{font-size:15px}
+ .microfeedback{margin-top:5px;min-height:15px;font-size:12px}
+ .content:has(.hintbody.open) .molecule-panel{flex:0 1 40%;min-height:158px}
+ .content:has(.hintbody.open) .helppanel{flex:1 1 40%;display:flex;flex-direction:column;min-height:150px}
+ .hintbody.open{display:flex;flex-direction:column;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+ .aside{min-height:0}.progresspanel{padding:13px 10px}
+ .progresspanel h2{font-size:15px}
+ .tubecontainer{height:180px}.tube{width:79px;height:149px;border-width:5px;border-radius:0 0 44px 44px}
+ .tubelip{top:7px;width:94px;height:14px;border-width:4px}.shine{height:105px}
+ .tube-score{font-size:23px}.tube-caption{margin:3px 0 9px}
+ .segbar{grid-template-columns:repeat(10,1fr);gap:3px}.segbar span{height:7px}
+}
+@media(min-width:881px) and (max-height:670px){
+ .content:has(.hintbody.open) .molecule-panel{flex-basis:32%;min-height:125px}
+ .molecule-panel{min-height:125px}.tubecontainer{height:135px}.tube{height:120px;width:66px}.tubelip{top:2px;width:80px}
+}
+@media (min-width:881px) and (min-height:600px){
+ .content:has(#buildRows) .molecule-panel{flex-basis:25%;min-height:115px}
+ .content:has(#buildRows) .helppanel{flex-basis:57%}
+ .content:has(.branch-edit) .molecule-panel{flex-basis:30%;min-height:130px}
+ .content:has(.branch-edit) .helppanel{flex-basis:50%}
+}
+/* Kleine Ansichten dürfen scrollen, statt Inhalte abzuschneiden. */
+@media(max-width:880px),(max-height:599px){html,body{overflow:auto}.wrap{height:auto;min-height:100dvh}}
+@media(max-width:880px){.info-panel{display:none}.aside{display:block}.tubecontainer{height:150px}.tube{height:120px}.tubelip{top:9px}.molecule-svg{height:230px}}
+ .ring-preview-num{font-size:12px;fill:#66758c;font-weight:800;paint-order:stroke;stroke:white;stroke-width:3}
+
+/* V3: Desktop-Lernfläche mit nebeneinanderliegender Molekül- und Hilfespalte.
+   So bleiben Aufgabe, Namenseingabe, Hilfe und Reagenzglas gleichzeitig sichtbar. */
+@media (min-width:881px) and (min-height:600px) {
+ html,body{height:100%;overflow:hidden}
+ .wrap{width:100%;max-width:1650px;height:100dvh;padding:9px 13px 11px}
+ .top{margin-bottom:9px;min-height:37px}
+ .layout{
+  flex:1;min-height:0;display:grid;
+  grid-template-columns:minmax(0,1.18fr) minmax(345px,.98fr) clamp(160px,15vw,210px);
+  grid-template-rows:minmax(0,1fr) auto;
+  column-gap:10px;row-gap:9px;
+ }
+ .content{display:contents}
+ .molecule-panel{grid-column:1;grid-row:1;min-height:0!important;padding:12px 14px 8px;display:flex;flex-direction:column;overflow:hidden;flex:none!important}
+ .molecule-panel .sectionhead{flex:0 0 auto}
+ .molecule-panel .molwrap{flex:1 1 auto;min-height:0;height:0;margin:0}
+ .molecule-panel .molecule-svg{height:100%;min-height:0}
+ .answerpanel{grid-column:1;grid-row:2;min-height:0;align-self:end;padding:10px 13px;margin:0;flex:none}
+ .answerpanel .feedback{font-size:12px;line-height:1.25;padding:6px 10px;margin-top:7px}
+ .answerpanel .feedback strong{display:inline;margin:0 6px 0 0}
+ .answerpanel .helprow{margin-top:6px}
+ .helppanel{grid-column:2;grid-row:1 / span 2;min-height:0!important;margin:0;padding:12px 13px;display:flex;flex-direction:column;overflow:hidden;flex:none!important}
+ .helphead{flex:0 0 auto;gap:7px}
+ .helphead h2{font-size:14px;line-height:1.2}
+ .helphead .secondary{white-space:nowrap;padding:6px 8px;font-size:12px}
+ .hintbody.open{display:flex;flex:1 1 auto;flex-direction:column;min-height:0;margin-top:8px;padding-top:9px;overflow-y:auto}
+ .hintstep{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-bottom:8px;flex:0 0 auto}
+ .hintstep span{padding:4px 6px;font-size:11px;line-height:1.15}
+ .helpcontent h3{font-size:15px;line-height:1.25;margin:0 0 5px}
+ .helpcontent p{font-size:12px;line-height:1.3;margin:0 0 7px}
+ .helpcontent .helpsmall{margin-top:6px!important;font-size:11px}
+ .choices{gap:6px}.choice{padding:6px 9px;font-size:12px}
+ .branch-edit{padding:7px;margin:5px 0;gap:6px}
+ .branch-edit label{font-size:11px;margin-bottom:2px}
+ .branch-edit select,.builder select,.helpcontent select{font-size:12px;padding:5px 6px;min-width:72px}
+ .branch-edit .primary{padding:6px 9px}
+ .taglist{gap:5px;margin-top:5px}
+ .tag{padding:3px 6px;font-size:11px}
+ .counter{padding:4px 7px;margin:4px 0 6px}
+ .builder{gap:5px}.builder-row{padding:5px 7px;gap:5px}
+ .builder-row .itemloc{min-width:55px}
+ .builder-row .itemname{min-width:43px}
+ .preview{margin:7px 0 4px;padding:6px 9px}
+ .microfeedback{flex:0 0 auto;font-size:12px;line-height:1.25;margin-top:5px;min-height:0}
+ .aside{grid-column:3;grid-row:1 / span 2;min-height:0}
+ .progresspanel{height:100%;padding:13px 11px}
+ .tubecontainer{height:clamp(140px,31vh,235px)}
+ .tube{height:clamp(112px,25vh,175px);width:78px}
+ .tubelip{top:8px;width:90px}
+ .segbar{grid-template-columns:repeat(5,1fr);gap:5px}
+}
+/* Niedrige Desktop-Fenster: Platz für alle Hilfeschritte erhalten. */
+@media (min-width:881px) and (min-height:600px) and (max-height:740px) {
+ .wrap{padding:5px 10px 7px}
+ .top{margin-bottom:5px;min-height:34px}
+ .pill button{padding:5px 10px}
+ .smallbtn{padding:6px 9px}
+ .layout{row-gap:6px;column-gap:8px}
+ .molecule-panel{padding:7px 11px 5px}
+ .answerpanel{padding:7px 11px}
+ .answerpanel .answerrow input{padding:6px 9px}
+ .helppanel{padding:8px 10px}
+ .hintbody.open{margin-top:5px;padding-top:6px}
+ .hintstep{margin-bottom:5px}
+ .helpcontent p{font-size:11px;margin-bottom:5px}
+ .helpcontent h3{font-size:14px}
+ .microfeedback{font-size:11px}
+}
+</style>
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="wrap">
+ <header class="top"><div class="brand"><div class="eyebrow">⚗ CHEMIE · NOMENKLATUR</div><h1>Alkane & Cycloalkane</h1></div><div class="topright"><div class="pill" aria-label="Schwierigkeitsgrad" id="difficulty"><button data-level="easy" aria-pressed="true">Einfach</button><button data-level="medium" aria-pressed="false">Mittel</button><button data-level="hard" aria-pressed="false">Knifflig</button></div><button class="smallbtn" id="restart" title="Neue Übungsrunde starten">↻ Neustart</button></div></header>
+ <main class="layout"><div class="content">
+ <section class="panel molecule-panel"><div class="sectionhead"><div><span class="stepmark" id="taskNo">AUFGABE 1 / 20</span><h2>Wie heißt dieses Molekül?</h2></div><span class="leveltag" id="levelTag">EINSTIEG</span></div><div class="molwrap"><svg id="molSvg" class="molecule-svg" role="img" aria-label="Skelettformel des zu benennenden Alkans" viewBox="0 0 800 330"></svg></div></section>
+ <section class="panel answerpanel"><form id="answerForm" autocomplete="off"><label for="answer">Dein IUPAC-Name</label><div class="answerrow"><input id="answer" type="text" spellcheck="false" autocapitalize="none" autocomplete="off" placeholder="z. B. 3-Ethyl-2-methylhexan"><button type="submit" class="primary" id="verify">Überprüfen ✓</button></div></form><div id="feedback" class="feedback" role="status" aria-live="polite"></div><div class="helprow" id="afterCorrect" hidden><button id="next" class="primary">Nächstes Molekül →</button></div></section>
+ <section class="panel helppanel"><div class="helphead"><div><h2>Hilfe: IUPAC-Name gemeinsam herleiten</h2></div><button id="helpToggle" class="secondary" aria-expanded="false">Hilfe öffnen</button></div><div id="hintbody" class="hintbody"><div class="hintstep" id="hintstep"><span>1 · Grundstruktur</span><span>2 · Positionen</span><span>3 · Seitenketten</span><span>4 · Name bauen</span></div><div id="helpcontent" class="helpcontent"></div><div class="microfeedback" id="microfeedback" role="status" aria-live="polite"></div></div></section>
+ </div><aside class="aside"><section class="panel progresspanel"><h2>Dein Reagenzglas</h2><div class="tubecontainer"><div class="tubelip"></div><div class="tube" id="tube"><div class="liquid" id="liquid"><div class="bubble" style="left:15%;width:9px;height:9px;animation-delay:.3s"></div><div class="bubble" style="left:60%;width:6px;height:6px;animation-delay:1.4s"></div><div class="bubble" style="left:43%;width:10px;height:10px;animation-delay:2.1s"></div></div><div class="shine"></div></div></div><div class="tube-score" id="scoreText">0 / 20</div><div class="tube-caption">Richtige Molekülnamen</div><div class="segbar" id="segbar" aria-label="Fortschritt"></div><div class="complete" id="complete"><div class="big">🎉</div><h2>Labor gemeistert!</h2><p>20 Moleküle richtig benannt!</p><button id="playAgain" class="primary">Neue Runde starten ↻</button></div></section></aside></main>
+</div>
+<script>
+'use strict';
+// Each record describes a carbon-chain tree: [parent-chain length, [[position, branch length], ...]].
+// The systematic preferred name and permissible parent paths are independently calculated from the graph.
+const POOLS={
+ easy:[
+ [5,[[2,1]]],[5,[[3,1]]],[6,[[2,1]]],[6,[[3,1]]],[7,[[2,1]]],[7,[[3,1]]],[7,[[4,1]]],
+ [5,[[2,1],[2,1]]],[5,[[2,1],[3,1]]],[5,[[2,1],[4,1]]],[5,[[3,1],[3,1]]],
+ [6,[[2,1],[3,1]]],[6,[[2,1],[4,1]]],[6,[[2,1],[5,1]]],[6,[[3,1],[3,1]]],[6,[[3,1],[4,1]]],
+ [7,[[2,1],[3,1]]],[7,[[2,1],[4,1]]],[7,[[3,1],[5,1]]],[7,[[3,1],[4,1]]],
+ [6,[[3,2]]],[7,[[3,2]]],[7,[[4,2]]],[7,[[3,2],[2,1]]]
+
+
+
+
+
+ ],
+ medium:[
+ [6,[[3,2],[2,1]]],[7,[[4,2],[2,1]]],[6,[[3,2],[2,1],[4,1]]],
+ [7,[[4,2],[3,1],[3,1]]],[7,[[3,2],[4,1]]],[7,[[2,1],[2,1],[5,1]]],
+ [6,[[3,2],[4,2]]],[7,[[3,1],[5,1]]],[8,[[4,2],[2,1]]],
+ [8,[[3,2],[5,1]]],[8,[[4,2],[5,1]]],[7,[[3,2],[5,1],[2,1]]],
+ [7,[[3,2],[4,1],[5,1]]],[7,[[4,2],[2,1],[5,1]]],
+ [8,[[3,2],[4,1],[6,1]]],[8,[[4,2],[3,1],[5,1]]],
+ [7,[[3,1],[4,1],[5,1]]],[8,[[2,1],[4,1],[6,1]]],
+ [8,[[3,2],[5,2]]],[8,[[4,2],[6,2]]],[7,[[3,1],[3,1],[5,1]]],
+ [7,[[3,2],[3,1],[5,1]]],[8,[[3,1],[4,1],[4,1]]],
+ ['ring',5,[[0,1],[1,1],[2,1]]],['ring',5,[[0,1],[1,1],[3,1]]],
+ ['ring',6,[[0,1],[1,1],[2,1]]],['ring',6,[[0,1],[1,1],[3,1]]],
+ ['ring',6,[[0,1],[2,1],[4,1]]],['ring',6,[[0,1],[2,1],[3,1]]],
+ ['ring',5,[[0,1],[2,1],[2,1]]],['ring',6,[[0,1],[0,1],[2,1]]],
+ ['ring',6,[[0,1],[1,2]]],['ring',6,[[0,1],[2,2]]],['ring',6,[[0,1],[3,2]]],
+ ['ring',6,[[0,2],[1,2]]],['ring',6,[[0,2],[2,2]]],['ring',6,[[0,2],[3,2]]],
+ ['ring',7,[[0,2],[2,1]]],['ring',7,[[0,2],[3,1]]],
+ ['ring',7,[[0,1],[2,1],[3,2]]],['ring',7,[[0,2],[2,1],[4,1]]],
+ ['ring',7,[[0,1],[1,2],[3,1]]],['ring',7,[[0,1],[2,2],[4,1]]]
+ ],
+ hard:[
+ [7,[[3,2],[5,1],[2,1]]],[7,[[4,2],[3,1],[3,1]]],
+ [7,[[4,2],[2,1],[3,1],[5,1]]],[7,[[3,1],[3,1],[5,1],[5,1]]],
+ [8,[[4,2],[3,1],[5,1]]],[7,[[3,2],[4,2],[2,1],[5,1]]],
+ [8,[[5,2],[3,1],[3,1],[4,1]]],[8,[[3,2],[5,2],[4,1]]],
+ [7,[[3,2],[4,2],[5,1]]],[8,[[3,1],[4,2],[5,1],[6,1]]],
+ [8,[[3,2],[4,2],[6,1],[6,1]]],[9,[[3,2],[5,2],[7,1]]],
+ [9,[[3,2],[5,1],[6,2]]],[9,[[4,2],[6,2],[2,1]]],
+ [9,[[3,1],[4,2],[6,1],[7,1]]],[9,[[2,1],[4,2],[6,2],[7,1]]],
+ [8,[[3,1],[3,1],[5,1],[6,2]]],[8,[[3,2],[4,1],[4,1],[6,1]]],
+ [9,[[3,2],[4,1],[6,2],[7,1]]],[9,[[3,1],[4,1],[5,1],[7,2]]],
+ [9,[[3,2],[5,2],[6,1],[7,1]]],[8,[[3,2],[5,2],[3,1],[6,1]]],
+ [9,[[3,1],[4,2],[5,2],[7,1]]],
+ ['ring',6,[[0,1],[1,1],[2,1],[3,1]]],['ring',6,[[0,1],[1,1],[2,1],[4,1]]],
+ ['ring',6,[[0,1],[1,1],[3,1],[4,1]]],['ring',6,[[0,1],[2,1],[3,1],[5,1]]],
+ ['ring',7,[[0,1],[1,1],[3,1],[5,1]]],['ring',7,[[0,1],[2,1],[3,1],[5,1]]],
+ ['ring',7,[[0,2],[1,1],[3,1]]],['ring',7,[[0,2],[2,1],[4,1]]],
+ ['ring',7,[[0,1],[1,2],[3,1],[5,1]]],['ring',7,[[0,2],[2,2],[4,1]]],
+ ['ring',7,[[0,2],[2,1],[3,2]]],['ring',7,[[0,1],[0,1],[2,2],[4,1]]],
+ ['ring',7,[[0,2],[1,1],[2,1],[4,1]]],['ring',7,[[0,2],[1,2],[3,1],[5,1]]],
+ ['ring',8,[[0,1],[2,1],[4,2],[6,1]]],['ring',8,[[0,2],[1,1],[3,1],[5,2]]],
+ ['ring',8,[[0,2],[2,2],[4,1],[5,1]]],['ring',8,[[0,2],[2,1],[4,2],[6,1]]]
+ ]
+};
+
+const ROOTS=['','methan','ethan','propan','butan','pentan','hexan','heptan','octan','nonan','decan','undecan','dodecan'];
+const ALKYLS=['','methyl','ethyl','propyl','butyl'];
+const MULT=['','', 'di','tri','tetra','penta','hexa'];
+const COLORS=['#d97706','#7854c8','#ca477d','#248f71'];
+const $=s=>document.querySelector(s);
+const escapeHtml=str=>String(str).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const shuffle=a=>{let out=a.slice();for(let i=out.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]]}return out};
+const ROUND_SIZE=20;
+const capFirst=s=>String(s).replace(/[a-zäöü]/i,c=>c.toUpperCase());
+let S={level:'easy',tasks:[],index:0,score:0,solved:false,hints:false,stage:0,selected:[],path:null,dir:0,branches:[],found:new Set(),activeBranch:null,groupInput:'methyl',posInput:1,buildRows:[],buildRoot:'',current:null,coords:[],best:[],ringStart:0,ringClockwise:true};
+
+function makeMol(spec){
+ if(spec[0]==='ring')return makeRing(spec);
+ const [len,side]=spec; const adj=Array.from({length:len},()=>[]),spine=Array.from({length:len},(_,i)=>i);let edges=[];
+ const add=(a,b)=>{adj[a].push(b);adj[b].push(a);edges.push([a,b])};
+ for(let i=0;i<len-1;i++)add(i,i+1);
+ for(const [p,n] of side){let last=p-1;for(let j=0;j<n;j++){let id=adj.length;adj.push([]);add(last,id);last=id}}
+ return {adj,edges,spine,spec};
+}
+function makeRing(spec){
+ const len=spec[1],side=spec[2],adj=Array.from({length:len},()=>[]),ring=Array.from({length:len},(_,i)=>i),edges=[];
+ const add=(a,b)=>{adj[a].push(b);adj[b].push(a);edges.push([a,b])};
+ for(let i=0;i<len;i++)add(i,(i+1)%len);
+ for(const [pos,count] of side){let last=pos;for(let i=0;i<count;i++){let id=adj.length;adj.push([]);add(last,id);last=id}}
+ return {adj,edges,ring,spine:ring,cyclic:true,spec};
+}
+function ringOrder(n,start,clockwise){return Array.from({length:n},(_,i)=>(start+(clockwise?i:-i)+n*3)%n)}
+function branchData(mol,path){
+ const on=new Set(path),out=[];
+ path.forEach((v,i)=>{for(const n of mol.adj[v]){if(on.has(n))continue;
+ const nodes=[],stack=[[n,v]];while(stack.length){const [u,prev]=stack.pop();nodes.push(u);for(const w of mol.adj[u])if(w!==prev&&!on.has(w))stack.push([w,u]);}
+ let straight=mol.adj[n].filter(w=>!on.has(w)).length<=1&&nodes.every(u=>mol.adj[u].filter(w=>!on.has(w)).length<=2);
+ out.push({anchor:v,loc:i+1,nodes:nodes.sort((a,b)=>a-b),len:nodes.length,straight,start:n});
+ }});return out;
+}
+function locCompare(x,y){for(let k=0;k<Math.max(x.length,y.length);k++){let a=x[k]??999,b=y[k]??999;if(a!==b)return a-b}return 0}
+function groupBranches(bs){let map=new Map();for(const b of bs){if(!map.has(b.len))map.set(b.len,[]);map.get(b.len).push(b.loc)}return [...map.entries()].map(([len,locs])=>({len,locs:locs.sort((a,b)=>a-b),name:ALKYLS[len]||'?',mult:MULT[locs.length]??'?'})).sort((a,b)=>a.name.localeCompare(b.name,'de'))}
+function chemName(path,bs,cyclic=false){
+ const group=groupBranches(bs),single=cyclic&&bs.length===1;
+ const prefix=group.map(g=>(single?'':g.locs.join(',')+'-')+g.mult+g.name).join('-');
+ return capFirst(prefix+(cyclic?'cyclo':'')+ROOTS[path.length]);
+}
+function analyze(mol){
+ if(mol.cyclic){
+  const n=mol.ring.length,options=[];
+  for(let start=0;start<n;start++)for(const clockwise of [true,false]){
+   const path=ringOrder(n,start,clockwise),bs=branchData(mol,path);
+   const locs=bs.map(b=>b.loc).sort((a,b)=>a-b),group=groupBranches(bs);
+   options.push({path,branches:bs,name:chemName(path,bs,true),count:bs.length,locs,alphaLocs:group.flatMap(g=>g.locs)});
+  }
+  options.sort((a,b)=>locCompare(a.locs,b.locs)||locCompare(a.alphaLocs,b.alphaLocs)||a.name.localeCompare(b.name));
+  return options;
+ }
+ let leaf=mol.adj.map((n,i)=>n.length===1?i:-1).filter(x=>x>=0),options=[];
+ if(mol.adj.length===1)return [{path:[0],branches:[],name:'methan',count:0,locs:[]}];
+ function findPath(start,end){const queue=[[start]];while(queue.length){const a=queue.shift(),v=a[a.length-1];if(v===end)return a;for(const n of mol.adj[v])if(!a.includes(n))queue.push([...a,n])}return []}
+ for(let i=0;i<leaf.length;i++)for(let j=i+1;j<leaf.length;j++){
+ const raw=findPath(leaf[i],leaf[j]);for(const path of [raw,raw.slice().reverse()]){
+ const bs=branchData(mol,path);if(bs.some(b=>!b.straight||b.len>=ALKYLS.length))continue;
+ const locs=bs.map(b=>b.loc).sort((a,b)=>a-b),group=groupBranches(bs);
+ const alphaLocs=group.flatMap(g=>g.locs),name=chemName(path,bs);
+ options.push({path,branches:bs,name,count:bs.length,locs,alphaLocs});
+ }}
+ options.sort((a,b)=>b.path.length-a.path.length||b.count-a.count||locCompare(a.locs,b.locs)||locCompare(a.alphaLocs,b.alphaLocs)||a.name.localeCompare(b.name));
+ return options;
+}
+function chooseOpts(mol){let opt=analyze(mol);if(!opt.length)throw Error('No valid alkane parent path');let best=opt[0];
+ let peers=opt.filter(x=>x.path.length===best.path.length&&x.count===best.count&&locCompare(x.locs,best.locs)===0&&locCompare(x.alphaLocs,best.alphaLocs)===0);
+ let names=[...new Set(peers.map(x=>x.name))];if(names.length>1)console.warn('naming tie:',names,mol.spec);
+ return {best,peers,all:opt};
+}
+function norm(s){return String(s).toLowerCase().normalize('NFKC').trim().replace(/[\u2010-\u2015−]/g,'-').replace(/\s+/g,'').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue')}
+function loose(s){return norm(s).replace(/[-,]/g,'')}
+function graphSignature(mol){
+ if(mol.cyclic){
+  const n=mol.ring.length,values=mol.ring.map(v=>mol.adj[v].filter(k=>!mol.ring.includes(k)).map(k=>{
+   let count=0,prev=v,cur=k;
+   while(cur!==undefined){count++;const next=mol.adj[cur].find(x=>x!==prev);prev=cur;cur=next}
+   return count;
+  }).sort((a,b)=>a-b).join(','));
+  const opts=[];
+  for(let i=0;i<n;i++)for(const direction of [1,-1])opts.push(Array.from({length:n},(_,j)=>values[(i+j*direction+n*n)%n]).join('|'));
+  return 'C'+n+':'+opts.sort()[0];
+ }
+ // Unverzweigte Kohlenstoffgraphen als kanonische Baum-Signatur.
+ const adj=mol.adj;let leaves=adj.map((a,i)=>a.length<=1?i:-1).filter(i=>i>=0),left=adj.length,deg=adj.map(x=>x.length);
+ while(left>2){left-=leaves.length;let newLeaves=[];for(const v of leaves){for(const n of adj[v]){deg[n]--;if(deg[n]===1)newLeaves.push(n)}deg[v]=0}leaves=newLeaves}
+ const centers=leaves.length?leaves:adj.map((_,i)=>i).filter(i=>deg[i]>0);
+ const rooted=(v,parent)=>'('+adj[v].filter(n=>n!==parent).map(n=>rooted(n,v)).sort().join('')+')';
+ return centers.map(c=>rooted(c,-1)).sort()[0]||'()';
+}
+
+function parseName(name){
+ const clean=norm(name),roots=ROOTS.slice(1).sort((a,b)=>b.length-a.length);
+ const cyclic=roots.some(r=>clean.endsWith('cyclo'+r));
+ const root=roots.find(r=>clean.endsWith((cyclic?'cyclo':'')+r));
+ if(!root)return {error:'root'};
+ const stem=ROOTS.indexOf(root),base=(cyclic?'cyclo':'')+root,pre=clean.slice(0,-base.length),parts=[];
+ if(pre){
+  const re=/((?:(?:\d+,)*\d+-)?)(di|tri|tetra|penta|hexa)?(methyl|ethyl|propyl|butyl)/gy;
+  let pos=0,m;
+  while(pos<pre.length){
+   re.lastIndex=pos;m=re.exec(pre);if(!m)return {error:'prefix',root,cyclic,parts};
+   const numbers=m[1],locs=numbers?numbers.slice(0,-1).split(',').map(Number):[],mult=m[2]||'',len=ALKYLS.indexOf(m[3]);
+   parts.push({locs,mult,len,name:m[3]});pos=re.lastIndex;
+   if(pre[pos]==='-')pos++;else if(pos<pre.length)return {error:'prefix',root,cyclic,parts};
+  }
+ }
+ const count={'':1,di:2,tri:3,tetra:4,penta:5,hexa:6};
+ if(cyclic&&stem<3)return {error:'root',root,cyclic,parts};
+ if(cyclic&&parts.length===1&&parts[0].mult===''&&parts[0].locs.length===0)parts[0].locs=[1];
+ if(parts.some(x=>x.locs.length!==count[x.mult]))return {error:'count',parts,root,cyclic};
+ if(parts.some(x=>x.locs.some(p=>p<1||p>stem)||(!cyclic&&x.locs.some(p=>p===1||p===stem))))return {error:'positions',root,parts,cyclic};
+ const spec=cyclic?['ring',stem,[]]:[stem,[]];
+ for(const x of parts)for(const pos of x.locs)spec[cyclic?2:1].push([cyclic?pos-1:pos,x.len]);
+ const built=makeMol(spec);
+ if(built.adj.some(v=>v.length>4))return {error:'valence',root,parts,cyclic};
+ return {root,parts,mol:built,cyclic};
+}
+
+function explainWrong(input,model){
+ if(model.cyclic)return explainRingWrong(input,model);
+ const v=norm(input),answer=model.best.name,p=parseName(input),correct=norm(answer);
+ if(!v)return ['Noch kein Name eingetragen','Versuche zuerst selbst einen Namen oder nutze den Hilfe.'];
+ if(loose(input)===loose(answer))return ['Fast richtig – Zeichensetzung','Die Molekülbestandteile stimmen. Setze Kommata zwischen Positionszahlen und Bindestriche zwischen Positionszahlen und Wortteilen. Zwischen den Alkylgruppen steht ebenfalls ein Bindestrich.'];
+ if(v.includes('äthyl')||v.includes('aethyl'))return ['Schreibweise prüfen','Bei systematischen Namen heißt die Gruppe „ethyl“, nicht „äthyl“.'];
+ if(p.error==='root')return ['Stammname prüfen','Der Name muss auf „…an“ enden. Ermittle zuerst die Anzahl der C-Atome in der längsten durchgehenden Kette.'];
+ if(p.error==='count')return ['Anzahl gleicher Seitenketten','„di“ braucht genau zwei Positionszahlen, „tri“ genau drei und „tetra“ genau vier. Jede Seitenkette braucht eine eigene Positionszahl – auch zwei am selben C-Atom.'];
+ if(p.error==='positions')return ['Positionen kontrollieren','Eine Seitenkette mit Positionszahl 1 am Kettenende deutet meist darauf hin, dass deine Hauptkette verlängert werden kann. Prüfe die Struktur und ihre C-Atome.'];
+ if(p.error==='valence')return ['Vierbindigkeit des Kohlenstoffs','In deinem Namen würden an einem Kohlenstoff mehr als vier C–C-Bindungen entstehen. Prüfe die Anzahl der Seitenketten an dieser Position.'];
+ if(p.error==='prefix'){
+ if(/(?:di|tri|tetra)(?:methyl|ethyl)/.test(v))return ['Positionszahlen fehlen?','Auch bei „di-“, „tri-“ und „tetra-“ braucht jede Seitenkette eine eigene Positionszahl (z. B. „2,3-dimethyl…“).'];
+ if(/(?:methyl|ethyl).*(?:methyl|ethyl)/.test(v))return ['Aufbau des Namens','Trenne verschiedene Alkylgruppen durch Bindestriche. Gleiche Gruppen werden mit di-/tri-/tetra- zusammengefasst.'];
+ return ['Form des Namens','Prüfe Schreibweise und Gliederung: Positionszahl – Alkylgruppe – Stammname. Nutze z. B. „2,3-dimethyl…“.'];
+ }
+ const same=graphSignature(p.mol)===graphSignature(model);
+ const sameStem=ROOTS.indexOf(p.root)===model.best.path.length;
+ const expectedGroup=groupBranches(model.best.branches),providedGroup=p.parts;
+ if(same){
+  if(!sameStem)return ['Längste Hauptkette','Dein Name beschreibt dieselbe Kohlenstoffverknüpfung, aber du hast eine zu kurze Hauptkette gewählt. Suche einen längeren durchgehenden Weg von C-Atom zu C-Atom.'];
+  if(providedGroup.map(x=>x.name).join('|')!==providedGroup.map(x=>x.name).sort().join('|'))return ['Alphabetische Reihenfolge','Die Struktur ist korrekt erfasst. Verschiedene Seitenketten müssen alphabetisch stehen, ohne „di“, „tri“ oder „tetra“ mitzuzählen.'];
+  let ours=model.best.branches,expected=model.best.locs;
+  let yours=p.parts.flatMap(x=>x.locs).sort((a,b)=>a-b);
+  if(yours.length===expected.length&&locCompare(yours,expected)!==0){
+   let reversed=yours.map(x=>model.best.path.length+1-x).sort((a,b)=>a-b);
+   if(locCompare(reversed,expected)===0)return ['Nummerierung umkehren','Der Name beschreibt dieselbe Molekülstruktur – aber du hast vom ungünstigeren Ende aus nummeriert. Vergleiche beide geordneten Positionszahlenfolgen.'];
+   return ['Kleinste Positionszahlen','Die Struktur ist erfasst, aber die Nummerierung ist noch nicht die bevorzugte. Vergleiche die Positionen an beiden Enden der Hauptkette.'];
+  }
+  if(ours.length!==p.parts.flatMap(x=>x.locs).length)return ['Gleich lange Hauptketten','Die Struktur stimmt, aber bei gleich langen Ketten muss die Hauptkette mit mehr Seitenketten gewählt werden.'];
+  const exp=groupBranches(ours),locFor=(arr,name)=>arr.find(x=>x.name===name)?.locs.join(',')||'';
+  if(exp.length===p.parts.length && exp.some(g=>locFor(exp,g.name)!==locFor(p.parts,g.name)))return ['Alphabetischer Stichentscheid','Beide Nummerierungsrichtungen liefern dieselbe Zahlenfolge. Dann bekommt die alphabetisch zuerst genannte Seitenkette die kleinere Positionszahl (Ethyl vor Methyl).'];
+  return ['Bevorzugte Benennung','Deine Angabe ergibt dieselbe Struktur. Prüfe bei gleich langen Hauptketten die Zahl der Seitenketten, kleinste Positionszahlen und nötigenfalls die alphabetische Reihenfolge.'];
+ }
+ if(!sameStem)return ['Hauptkette noch einmal prüfen',`Du verwendest „${p.root}“. Prüfe, ob sich eine längere, lückenlose Kette durch das Molekül verfolgen lässt. Eine Seitenkette darf nicht einfach „übersprungen“ werden.`];
+ const targetTypes=expectedGroup.map(g=>g.name).sort().join(','),theirTypes=providedGroup.map(g=>g.name).sort().join(',');
+ if(targetTypes===theirTypes){
+  const targetNums=expectedGroup.reduce((n,g)=>n+g.locs.length,0),gotNums=providedGroup.reduce((n,g)=>n+g.locs.length,0);
+  if(targetNums!==gotNums)return ['Seitenketten zählen',`Du hast die Arten der Seitenketten erkannt, aber noch nicht alle Vorkommen erfasst. Vergiss doppelte Verzweigungen an einem C-Atom nicht.`];
+  let positions=p.parts.flatMap(x=>x.locs).sort((a,b)=>a-b),expected=model.best.locs;
+  let reversed=positions.map(x=>model.best.path.length+1-x).sort((a,b)=>a-b);
+  if(locCompare(reversed,expected)===0)return ['Nummerierung umkehren','Du hast wahrscheinlich vom anderen Ende aus gezählt. Vergleiche die geordneten Listen aller Seitenkettenpositionen von beiden Enden. Die erste unterschiedliche Zahl entscheidet.'];
+  if(locCompare(positions,expected)!==0)return ['Positionszahlen prüfen','Die Arten und Anzahlen der Seitenketten wirken passend. Prüfe die Verknüpfungspunkte und wähle die Nummerierung mit der kleinsten Positionszahlenfolge.'];
+  if(providedGroup.map(x=>x.name).join('|')!==providedGroup.map(x=>x.name).sort().join('|'))return ['Alphabetisch sortieren','Ethyl wird vor Methyl genannt; „di“, „tri“ und „tetra“ werden bei der Reihenfolge nicht mitgezählt.'];
+ }
+ if(/methyl/.test(v)&&!v.includes('di')&&expectedGroup.some(x=>x.len===1&&x.locs.length>1))return ['Mehrere Methylgruppen?','Achte darauf, ob Methylgruppen mehrfach vorkommen. Bei zwei gleichen Gruppen brauchst du „di“ und zwei Positionszahlen.'];
+ return ['Struktur und Name abgleichen','Mindestens eine Seitenkette, Positionszahl oder ihre Zuordnung stimmt noch nicht. Markiere im Baukasten zuerst die Hauptkette und zähle die abzweigenden C-Atome.'];
+}
+function explainRingWrong(input,model){
+ const v=norm(input),answer=model.best.name,p=parseName(input);
+ if(!v)return ['Noch kein Name','Gib zunächst einen Namen ein oder nutze die Hilfe.'];
+ if(loose(input)===loose(answer))return ['Zeichensetzung prüfen','Trenne unterschiedliche Seitenketten durch Bindestriche und ihre Positionszahlen mit Kommata.'];
+ if(p.error==='root'||!p.cyclic)return ['Ring als Stammstruktur','Ein Cycloalkan erkennt man am geschlossenen Kohlenstoffring. Überprüfe den Stammnamen mit „cyclo“.'];
+ if(p.error==='count')return ['Mehrfachvorsätze und Lokanten','Zu „di“ gehören zwei Positionszahlen, zu „tri“ drei. Bei nur einer Seitenkette am Ring entfällt die Positionszahl 1.'];
+ if(p.error==='positions')return ['Positionen am Ring','Bei der Ringnummerierung sind nur Zahlen von 1 bis zur Anzahl der Ring-C-Atome möglich.'];
+ if(p.error==='valence')return ['Vierbindigkeit','Am Ring hat jedes Kohlenstoffatom bereits zwei Ringbindungen. Es können höchstens zwei weitere C–C-Bindungen dazukommen.'];
+ if(p.error==='prefix')return ['Schreibweise der Seitenketten','Bei mehreren Seitenketten beginnen die Positionszahlen mit 1. Achte auf alphabetische Reihenfolge und Zahlvorsätze.'];
+ if(graphSignature(p.mol)===graphSignature(model)){
+  if(model.best.branches.length===1&&/^1-/.test(v))return ['Positionszahl überflüssig','Bei einem Cycloalkan mit genau einer Seitenkette ist die Position eindeutig. Die 1 wird weggelassen.'];
+  let target=model.best.locs,actual=p.parts.flatMap(x=>x.locs).sort((a,b)=>a-b);
+  if(locCompare(actual,target)!==0)return ['Ring anders nummerieren','Die Struktur passt, aber du kannst den Startpunkt oder die Zählrichtung so ändern, dass die erste abweichende Positionszahl kleiner wird.'];
+  return ['Alphabetische Reihenfolge','Bei gleicher Positionszahlenfolge bekommt die alphabetisch zuerst genannte Seitenkette die kleinste Position. „Di“ und „tri“ werden nicht berücksichtigt.'];
+ }
+ if(ROOTS.indexOf(p.root)!==model.ring.length)return ['Ringgröße prüfen','Zähle die C-Atome im geschlossenen Ring; nicht die gesamte Anzahl der C-Atome.'];
+ return ['Seitenketten und Positionen','Prüfe die Länge der Seitenketten und die Positionen am Ring. Der richtige Startpunkt wird noch nicht angezeigt.'];
+}
+function newRound(level=S.level){
+ S.level=level;S.index=0;S.score=0;$('#tube').classList.remove('celebrate');
+ const unique=(specs,count)=>{
+  const selected=[],seen=new Set();
+  for(const spec of shuffle(specs)){
+   const mol=makeMol(spec);if(mol.adj.some(a=>a.length>4))continue;
+   const opt=chooseOpts(mol).best;
+   if(opt.path.length<4||opt.branches.some(b=>!b.straight||b.len>3)||seen.has(opt.name))continue;
+   seen.add(opt.name);selected.push(mol);if(selected.length===count)break;
+  }
+  return selected;
+ };
+ const pool=POOLS[level];
+ const ringCount=level==='easy'?0:7;
+ const chains=unique(pool.filter(p=>p[0]!=='ring'),ROUND_SIZE-ringCount);
+ const rings=ringCount?unique(pool.filter(p=>p[0]==='ring'),ringCount):[];
+ S.tasks=shuffle([...chains,...rings]);
+ if(S.tasks.length!==ROUND_SIZE)throw Error('Zu wenige verschiedene Aufgaben in '+level+': '+S.tasks.length);
+ $('#complete').classList.remove('show');
+ document.querySelectorAll('#difficulty button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.level===level));renderScore();showTask();
+}
+
+function showTask(){
+ S.current=S.tasks[S.index];const choice=chooseOpts(S.current);S.best=choice.peers;S.solution=choice.best;S.current.best=choice.best;
+ if(!S.current.cyclic){
+  const alt=choice.all.filter(o=>o.path.length===choice.best.path.length-1&&o.path.length>=4&&o.branches.every(b=>b.straight&&b.len<=3));
+  const trap=S.level==='hard'?S.index%3!==0:S.level==='medium'?S.index%2===1:S.index===6;
+  S.current.displayPath=trap&&alt.length?(shuffle(alt).find(o=>safeDrawPath(S.current,o.path))?.path||S.current.spine):S.current.spine;
+ }
+ S.solved=false;S.hints=false;S.stage=0;S.selected=[];S.path=null;S.dir=0;S.branches=[];S.found=new Set();S.activeBranch=null;S.buildRows=[];S.buildRoot='';S.ringStart=0;S.ringClockwise=true;
+ $('#taskNo').textContent=`AUFGABE ${S.index+1} / ${ROUND_SIZE}`;$('#levelTag').textContent={easy:'EINFACH',medium:'MITTEL',hard:'KNIFFLIG'}[S.level];
+ $('#answer').value='';$('#answer').disabled=false;$('#verify').disabled=false;
+ $('#afterCorrect').hidden=true;$('#feedback').className='feedback';$('#feedback').innerHTML='';$('#hintbody').classList.remove('open');
+ $('#helpToggle').textContent='Hilfe öffnen';$('#helpToggle').setAttribute('aria-expanded','false');$('#microfeedback').textContent='';
+ renderHelp();drawMol();
+}
+
+function renderScore(){
+ $('#scoreText').textContent=`${S.score} / ${ROUND_SIZE}`;
+ $('#liquid').style.height=`${S.score*100/ROUND_SIZE}%`;$('#liquid').style.visibility=S.score?'visible':'hidden';
+ $('#segbar').innerHTML=Array.from({length:ROUND_SIZE},(_,i)=>`<span class="${i<S.score?'full':''}"></span>`).join('');
+ $('#liquid').querySelectorAll('.bubble').forEach(el=>el.style.display=S.score?'block':'none');
+}
+
+function showFeedback(title,msg,type='bad'){$('#feedback').className=`feedback show ${type}`;$('#feedback').innerHTML=`<strong>${escapeHtml(title)}</strong>${escapeHtml(msg)}`}
+function hasCapitalInitial(raw){const m=raw.match(/[A-Za-zÄÖÜäöü]/);return !!m&&m[0]===m[0].toUpperCase();}
+function verify(){
+ if(S.solved)return;
+ const raw=$('#answer').value.trim(),v=norm(raw);if(v===norm(S.solution.name)&&!hasCapitalInitial(raw)){showFeedback('Großschreibung beachten','Der erste Buchstabe des IUPAC-Namens muss großgeschrieben werden (z. B. 3-Ethyl-2-methylhexan).');return;}if(v===norm(S.solution.name)){
+ S.solved=true;S.score++;renderScore();showFeedback('Richtig! 🧪 +1 Füllstand',`Der systematische Name lautet ${S.solution.name}. Gut erkannt!`,'good');$('#answer').disabled=true;$('#verify').disabled=true;$('#afterCorrect').hidden=S.score===ROUND_SIZE;$('#next').textContent='Nächstes Molekül →';
+ // Only reveal all highlighting after user has completed answer.
+ drawMol();if(S.score===ROUND_SIZE){
+  setTimeout(()=>{if(S.score!==ROUND_SIZE||!S.solved)return;$('#tube').classList.add('celebrate');fireworks()},700);
+  setTimeout(()=>{if(S.score===ROUND_SIZE&&S.solved)$('#complete').classList.add('show')},2200);
+ }
+ }else{const [title,msg]=explainWrong($('#answer').value,S.current);showFeedback(title,msg);}
+}
+$('#answerForm').addEventListener('submit',e=>{e.preventDefault();verify()});
+$('#next').addEventListener('click',()=>{if(S.score<ROUND_SIZE){S.index++;showTask();$('#answer').focus()}});
+$('#playAgain').addEventListener('click',()=>newRound());$('#restart').addEventListener('click',()=>newRound());
+$('#difficulty').addEventListener('click',e=>{let b=e.target.closest('button[data-level]');if(b)newRound(b.dataset.level)});
+$('#helpToggle').addEventListener('click',()=>{S.hints=!S.hints;$('#hintbody').classList.toggle('open',S.hints);$('#helpToggle').setAttribute('aria-expanded',String(S.hints));$('#helpToggle').textContent=S.hints?'Hilfe schließen':'Hilfe öffnen';if(S.hints&&S.solved){S.stage=4}renderHelp();drawMol()});
+
+function setMicro(text,positive=false){$('#microfeedback').style.color=positive?'#188262':'#96652d';$('#microfeedback').textContent=text;}
+function isAdjacent(a,b){return S.current.adj[a].includes(b)}
+function samePath(a,b){return a.length===b.length&&a.every((x,i)=>b[i]===x)}
+function currentTarget(){return S.best.find(o=>samePath(S.path,o.path)||samePath(S.path,o.path.slice().reverse()))||S.solution}
+function chooseAtom(v){
+ if(!S.hints||S.solved)return;
+ if(S.stage===0){
+  if(S.selected.length===0){S.selected=[v];setMicro('Kette begonnen. Klicke auf ein benachbartes C-Atom.');}
+  else if(S.selected[S.selected.length-1]===v){S.selected.pop();setMicro('Letztes C-Atom entfernt.');}
+  else if(S.selected.includes(v)){S.selected=S.selected.slice(0,S.selected.indexOf(v)+1);setMicro('Kette bis hierhin verkürzt.');}
+  else if(isAdjacent(S.selected[S.selected.length-1],v)){S.selected.push(v);setMicro(`${S.selected.length} C-Atome ausgewählt. Ist das die längste mögliche Kette?`)}
+  else{setMicro('Nur direkt verbundene C-Atome lassen sich zu einer durchgehenden Hauptkette verbinden.');}
+  renderHelp();drawMol();
+ }else if(S.stage===2){
+  const group=S.branches.findIndex(b=>b.nodes.includes(v));if(group<0){setMicro('Klicke auf ein C-Atom außerhalb der türkis markierten Hauptkette.');return;}
+  if(S.found.has(group)){setMicro('Diese Seitenkette wurde bereits richtig bestimmt. Wähle eine andere.');return;}
+  S.activeBranch=group;S.groupInput='methyl';S.posInput=1;setMicro('Seitenkette markiert. Bestimme ihre Länge und die Position, an der sie an der Hauptkette hängt.');renderHelp();drawMol();
+ }
+}
+function checkPath(){
+ const selected=S.selected;
+ if(S.current.cyclic){
+  const ring=S.current.ring;
+  if(selected.length!==ring.length||!selected.every(v=>ring.includes(v))||!isAdjacent(selected[0],selected[selected.length-1])){
+   setMicro('Wähle die C-Atome des geschlossenen Rings lückenlos aus – ohne die Seitenketten.');return;
+  }
+  S.path=selected.slice();S.stage=1;setMicro('Ring erkannt! Lege nun selbst Startpunkt und Richtung der Nummerierung fest.',true);renderHelp();drawMol();return;
+ }
+ if(selected.length<2){setMicro('Wähle mindestens zwei aufeinanderfolgende C-Atome.');return}
+ let longest=S.solution.path.length;
+ if(selected.length<longest){setMicro(`Diese Kette umfasst ${selected.length} C-Atome, es gibt aber eine längere durchgehende Kette. Probiere einen anderen Weg.`);return}
+ if(selected.length>longest){setMicro('Diese Auswahl ist keine gültige Hauptkette; kontrolliere die Verbindungen.');return}
+ const valid=S.best.some(o=>samePath(selected,o.path)||samePath(selected,o.path.slice().reverse()));
+ if(!valid){let a=branchData(S.current,selected).length,needed=S.solution.count;
+ setMicro(a<needed?`Es gibt gleich lange Ketten. Deine Wahl lässt ${a} Seitenketten übrig; eine andere lässt mehr Seitenketten übrig.`:'Die Länge stimmt. Prüfe bei Gleichstand die Positionszahlen der Verzweigungen.');return}
+ S.path=selected.slice();S.stage=1;setMicro('Richtig! Jetzt entscheide, von welchem Ende aus nummeriert wird.',true);renderHelp();drawMol();
+}
+function checkDirection(d){
+ if(!S.path)return;
+ const proposed=d===0?S.path:S.path.slice().reverse();
+ let valid=S.best.some(o=>samePath(proposed,o.path));
+ if(!valid){
+  let bs=branchData(S.current,proposed),other=branchData(S.current,proposed.slice().reverse());
+  let list=bs.map(b=>b.loc).sort((a,b)=>a-b),rev=other.map(b=>b.loc).sort((a,b)=>a-b);
+  if(locCompare(list,rev)>0)setMicro(`Versuche das andere Ende. Vergleiche ${list.join(', ')} mit ${rev.join(', ')}: die erste unterschiedliche Zahl entscheidet.`);
+  else setMicro('Bei gleicher Positionszahlenfolge erhält die alphabetisch zuerst genannte Seitenkette die kleinere Zahl. Prüfe das andere Ende.');return;
+ }
+ S.path=proposed;S.dir=d;S.branches=branchData(S.current,S.path);S.stage=2;setMicro('Richtig nummeriert! Jetzt die Seitenketten entdecken.',true);renderHelp();drawMol();
+}
+function checkRingNumbering(){
+ const n=S.current.ring.length,path=ringOrder(n,S.ringStart,S.ringClockwise);
+ if(!S.best.some(o=>samePath(path,o.path))){
+  const branches=branchData(S.current,path),got=branches.map(b=>b.loc).sort((a,b)=>a-b),best=S.solution.locs;
+  if(locCompare(got,best)>0)setMicro('Die Positionszahlen lassen sich verkleinern. Vergleiche die geordnete Zahlenfolge von mehreren Startpunkten und Richtungen.');
+  else setMicro('Diese Zahlenfolge ist noch nicht die bevorzugte. Bei Gleichstand entscheidet, welche Seitenkette alphabetisch zuerst genannt wird.');
+  return;
+ }
+ S.path=path;S.branches=branchData(S.current,S.path);S.stage=2;setMicro('Richtig nummeriert! Ermittle nun die Seitenketten.',true);renderHelp();drawMol();
+}
+function identifyBranch(){
+ const b=S.branches[S.activeBranch];if(!b)return;
+ let chosenLen=ALKYLS.indexOf(S.groupInput);
+ if(chosenLen!==b.len){setMicro('Die Seitenkette hat nicht die gewählte Länge. Zähle nur die C-Atome außerhalb der türkisfarbenen Hauptkette.');return}
+ if(+S.posInput!==b.loc){setMicro('Suche das C-Atom der Hauptkette, an dem dieser Ast beginnt, und lies dessen Nummer ab.');return}
+ S.found.add(S.activeBranch);S.activeBranch=null;setMicro(`${S.found.size} von ${S.branches.length} Seitenketten bestimmt. Gut!`,true);
+ if(S.found.size===S.branches.length){S.stage=3;setupBuilder();setMicro('Alle Seitenketten gefunden! Setze jetzt die einzelnen Namensbausteine zusammen.',true)}renderHelp();drawMol();
+}
+function setupBuilder(){
+ const groups=groupBranches(S.branches);S.buildRows=shuffle(groups).map(g=>({...g,pick:'',originalLocs:g.locs.slice()}));S.buildRoot='';
+}
+function builderPreview(){
+ return capFirst(S.buildRows.map(r=>(S.current.cyclic&&S.branches.length===1?'':r.locs.join(',')+'-')+r.pick+r.name).join('-')+S.buildRoot);
+}
+function checkBuilder(){
+ for(const row of S.buildRows){if(row.pick!==row.mult){setMicro('Prüfe die Häufigkeit: Für eine Gruppe kein Vorsatz, für zwei „di“, für drei „tri“, für vier „tetra“.');return}}
+ if(S.buildRows.map(x=>x.name).join('|')!==S.buildRows.map(x=>x.name).sort().join('|')){setMicro('Ordne die verschiedenen Seitenketten alphabetisch. „Di“, „tri“ usw. zählen dabei nicht mit.');return}
+ if(S.buildRoot!==(S.current.cyclic?'cyclo':'')+ROOTS[S.path.length]){setMicro('Zähle die C-Atome in der türkisfarbenen Hauptkette und wähle dazu den passenden Stammnamen.');return}
+ const full=builderPreview();if(norm(full)!==norm(S.solution.name)){setMicro('Fast! Überprüfe noch die Zuordnung der Positionen zu den Seitenketten.');return}
+ $('#answer').value=full;setMicro('Deine Bausteine ergeben einen Namen. Prüfe ihn jetzt oben, um den Fortschritt zu sichern.',true);$('#answer').focus();
+}
+function renderHelp(){
+ const steps=$('#hintstep').children;[...steps].forEach((el,i)=>{el.className=i===S.stage?'now':i<S.stage?'done':''});let h=$('#helpcontent');
+ if(S.solved){h.innerHTML='<h3>Aufgabe gelöst!</h3><p>Du hast dieses Molekül erfolgreich benannt. Weiter geht es mit der nächsten Struktur.</p>';return}
+ if(S.stage===0){if(S.current.cyclic){
+ h.innerHTML=`<h3>1. Wo liegt der Ring?</h3><p>Klicke die C-Atome des <strong>geschlossenen Rings</strong> der Reihe nach an. Wähle keine Seitenketten. Klicke auf „Prüfen“, sobald du den ganzen Ring markiert hast.</p><div class="counter">Ausgewählt: <strong>${S.selected.length}</strong> C-Atome</div><div class="choices"><button class="secondary" id="undoAtom">↶ Zurück</button><button class="secondary" id="clearAtoms">↻ Neu wählen</button><button class="primary" id="testPath">Ring prüfen</button></div>`;
+ $('#undoAtom').onclick=()=>{S.selected.pop();renderHelp();drawMol()};$('#clearAtoms').onclick=()=>{S.selected=[];renderHelp();drawMol()};$('#testPath').onclick=checkPath;return;
+ }
+ h.innerHTML=`<h3>1. Welche ist die längste C-Kette?</h3><p><strong>Verbinde die C-Atome per Klick</strong> von einem Kettenende zum nächsten. Eine Kette darf weder verzweigen noch dasselbe Atom zweimal besuchen. Wähle selbst – die richtige Hauptkette wird vorher nicht angezeigt.</p><div class="counter">Ausgewählt: <strong>${S.selected.length}</strong> C-Atome</div><div class="choices"><button class="secondary" id="undoAtom">↶ Letztes zurück</button><button class="secondary" id="clearAtoms">↻ Neu wählen</button><button class="primary" id="testPath">Hauptkette prüfen</button></div><p class="helpsmall" style="margin-top:12px">Tipp: Beginne an einem Linienende – die längste Kette ist nicht zwingend die waagrechte Zickzacklinie.</p>`;
+ $('#undoAtom').onclick=()=>{S.selected.pop();setMicro('Letztes Atom entfernt.');renderHelp();drawMol()};$('#clearAtoms').onclick=()=>{S.selected=[];setMicro('Neue Auswahl starten.');renderHelp();drawMol()};$('#testPath').onclick=checkPath;
+ }else if(S.stage===1){if(S.current.cyclic){
+ const n=S.current.ring.length;h.innerHTML=`<h3>2. Ring nummerieren</h3><p>Wähle das <strong>Startatom</strong> und die <strong>Zählrichtung</strong>. Die Buchstaben A–${String.fromCharCode(64+n)} kennzeichnen lediglich Ringatome, keine Positionszahlen. Suche die kleinste mögliche Positionszahlenfolge.</p><div class="helprow"><label for="ringStart">Startatom</label><select id="ringStart">${Array.from({length:n},(_,i)=>`<option value="${i}">${String.fromCharCode(65+i)}</option>`).join('')}</select><button class="choice" id="cw">↻ Uhrzeigersinn</button><button class="choice" id="ccw">↺ Gegenuhrzeigersinn</button><button class="primary" id="ringCheck">Nummerierung prüfen</button></div>`;
+ $('#ringStart').value=S.ringStart;$('#ringStart').onchange=e=>{S.ringStart=+e.target.value;drawMol()};
+ $('#cw').onclick=()=>{S.ringClockwise=true;renderHelp();drawMol()};$('#ccw').onclick=()=>{S.ringClockwise=false;renderHelp();drawMol()};
+ $('#cw').classList.toggle('active',S.ringClockwise);$('#ccw').classList.toggle('active',!S.ringClockwise);$('#ringCheck').onclick=checkRingNumbering;return;
+ }let a=S.path[0],b=S.path[S.path.length-1];h.innerHTML=`<h3>2. Wo beginnt die Nummerierung?</h3><p>Die Hauptkette ist türkis markiert. Die beiden Enden sind mit <strong>blau (A)</strong> und <strong>orange (B)</strong> gekennzeichnet. Wähle das Ende, von dem aus die Seitenketten möglichst kleine Positionszahlen erhalten.</p><div class="choices"><button class="choice" id="dirA">Ab Ende A nummerieren</button><button class="choice" id="dirB">Ab Ende B nummerieren</button></div><p class="helpsmall" style="margin-top:12px">Vergleiche die aufsteigend sortierten Positionszahlen. Bei Gleichstand entscheide nach dem alphabetischen Namen der Seitenketten.</p>`;
+ $('#dirA').onclick=()=>checkDirection(0);$('#dirB').onclick=()=>checkDirection(1);
+ }else if(S.stage===2){let count=S.branches.length;
+ h.innerHTML=`<h3>3. Was sind die Seitenketten?</h3><p>Die Hauptkette ist nummeriert. <strong>Klicke auf einen nicht-türkisen Ast.</strong> Die C-Atome dieses Astes werden farbig markiert. Bestimme zuerst, wie viele C-Atome der Ast besitzt, und dann die Nummer seines Verzweigungspunkts.</p><div class="counter">Gefunden: <strong>${S.found.size} / ${count}</strong> Seitenketten</div><div class="taglist">${[...S.found].map(i=>{let b=S.branches[i];return `<span class="tag">${b.loc}-${ALKYLS[b.len]} ✓</span>`}).join('')}</div>`;
+ if(S.activeBranch!==null){let b=S.branches[S.activeBranch];h.innerHTML+=`<div class="branch-edit"><div><label for="groupSelect">Welche Seitenkette?</label><select id="groupSelect"><option value="methyl">Methyl · 1 C</option><option value="ethyl">Ethyl · 2 C</option><option value="propyl">Propyl · 3 C</option></select></div><div><label for="posSelect">Position der Verzweigung</label><select id="posSelect">${S.path.map((_,i)=>`<option value="${i+1}">${i+1}</option>`).join('')}</select></div><button class="primary" id="saveBranch">Zuordnung prüfen ✓</button></div>`;
+ $('#groupSelect').value=S.groupInput;$('#posSelect').value=S.posInput;$('#groupSelect').onchange=e=>S.groupInput=e.target.value;$('#posSelect').onchange=e=>S.posInput=Number(e.target.value);$('#saveBranch').onclick=identifyBranch;
+ }
+ if(count===0){S.stage=3;setupBuilder();renderHelp()}
+ }else if(S.stage===3){
+ const n=S.path.length;let roots=ROOTS.slice(Math.max(S.current.cyclic?3:1,n-2),Math.min(ROOTS.length,n+3)).map(r=>(S.current.cyclic?'cyclo':'')+r);
+ h.innerHTML=`<h3>4. Setze den Namen selbst zusammen</h3><p>Die Positionen und Seitenketten hast du bereits erarbeitet. <strong>Du</strong> entscheidest jetzt über Zahlvorsätze, alphabetische Reihenfolge und den Stammnamen. Die Vorschau zeigt nur deine eigene Auswahl.</p><div class="builder" id="buildRows"></div><div class="helprow"><label for="rootSelect"><strong>Stammname: </strong></label><select id="rootSelect"><option value="">Bitte wählen …</option>${roots.map(x=>`<option value="${x}">${x}</option>`).join('')}</select></div><div class="preview"><div class="helpsmall">Deine Vorschau:</div><strong id="previewText"></strong></div><button class="primary" id="builderCheck">Meinen Namen übernehmen →</button>`;
+ $('#rootSelect').value=S.buildRoot;$('#rootSelect').onchange=e=>{S.buildRoot=e.target.value;updatePreview()};
+ $('#builderCheck').onclick=checkBuilder;drawRows();updatePreview();
+ }
+}
+function drawRows(){const el=$('#buildRows');if(!el)return;el.innerHTML=S.buildRows.map((r,i)=>`<div class="builder-row" data-idx="${i}"><span class="itemloc" style="color:${COLORS[r.len-1]||'#087e89'}">${r.locs.join(',')}-</span><select aria-label="Zahlvorsatz für ${r.name}" data-index="${i}"><option value="">kein Vorsatz</option><option value="di">di</option><option value="tri">tri</option><option value="tetra">tetra</option></select><span class="itemname">${r.name}</span><button class="move" data-up="${i}" aria-label="${r.name} nach oben" ${i===0?'disabled':''}>↑</button><button class="move" data-down="${i}" aria-label="${r.name} nach unten" ${i===S.buildRows.length-1?'disabled':''}>↓</button></div>`).join('');
+ el.querySelectorAll('select').forEach(s=>{s.value=S.buildRows[+s.dataset.index].pick;s.onchange=e=>{S.buildRows[+s.dataset.index].pick=e.target.value;updatePreview()}});
+ el.querySelectorAll('[data-up]').forEach(b=>b.onclick=()=>{let i=+b.dataset.up;[S.buildRows[i-1],S.buildRows[i]]=[S.buildRows[i],S.buildRows[i-1]];drawRows();updatePreview()});
+ el.querySelectorAll('[data-down]').forEach(b=>b.onclick=()=>{let i=+b.dataset.down;[S.buildRows[i+1],S.buildRows[i]]=[S.buildRows[i],S.buildRows[i+1]];drawRows();updatePreview()});
+}
+function updatePreview(){let el=$('#previewText');if(el)el.textContent=builderPreview()||'…'}
+function safeDrawPath(mol,path){
+ const old=mol.displayPath;mol.displayPath=path;
+ let coords=layout(mol);mol.displayPath=old;
+ for(let i=0;i<coords.length;i++)for(let j=i+1;j<coords.length;j++){
+  if(mol.adj[i].includes(j))continue;
+  if(Math.hypot(coords[i].x-coords[j].x,coords[i].y-coords[j].y)<34)return false;
+ }
+ return true;
+}
+function layout(mol){
+ if(mol.cyclic){
+  const n=mol.ring.length,coords=[],centerX=400,centerY=165,radius=n<=5?103:118;
+  mol.ring.forEach((v,i)=>{const a=-Math.PI/2+2*Math.PI*i/n;coords[v]={x:centerX+radius*Math.cos(a),y:centerY+radius*Math.sin(a)}});
+  const bs=branchData(mol,mol.ring),groupAt=new Map();
+  bs.forEach(b=>{if(!groupAt.has(b.anchor))groupAt.set(b.anchor,[]);groupAt.get(b.anchor).push(b)});
+  for(const [v,group] of groupAt){
+   const i=mol.ring.indexOf(v),baseAngle=-Math.PI/2+2*Math.PI*i/n;
+   group.forEach((b,j)=>{
+    const a=baseAngle+(group.length>1?(j===0?-.34:.34):0);
+    let parent=v,current=b.start,px=coords[v].x,py=coords[v].y;
+    for(let k=0;k<b.len;k++){
+     // Alternating angles make every intermediate carbon visible in skeletal formulae.
+     const aStep=a+(k%2===1?(j%2===0?.7:-.7):0);
+     px+=66*Math.cos(aStep);py+=66*Math.sin(aStep);
+     coords[current]={x:px,y:py};
+     const next=mol.adj[current].find(w=>w!==parent&&!mol.ring.includes(w));parent=current;current=next;
+    }
+   });
+  }
+  return coords;
+ }
+ const display=mol.displayPath||mol.spine,len=display.length,step=75,center=(len-1)*step/2,coords=[];
+ for(let i=0;i<len;i++)coords[display[i]]={x:400-center+i*step,y:165+(i%2===0?18:-18)};
+ const branches=branchData(mol,display),groupAt=new Map();
+ for(let i=0;i<branches.length;i++){const b=branches[i];if(!groupAt.has(b.anchor))groupAt.set(b.anchor,[]);groupAt.get(b.anchor).push(b)}
+ for(const [anchor,group] of groupAt){
+  const v=display.indexOf(anchor),base=coords[anchor],outward=v%2===0?1:-1;
+  for(let g=0;g<group.length;g++){
+   const item=group[g],dirX=group.length===1?0:(g===0?-36:36);
+   let current=item.start,previous=anchor;
+   for(let j=0;j<item.len;j++){
+    let x,y;
+    if(j===0){x=base.x+dirX;y=base.y+outward*(group.length===1?63:57)}
+    else if(j===1){x=base.x+dirX+(dirX===0?45:(dirX<0?-45:45));y=base.y+outward*(group.length===1?94:87)}
+    else{x=base.x+dirX+(dirX===0?45:(dirX<0?-45:45));y=base.y+outward*(group.length===1?153:144)}
+    coords[current]={x,y};
+    const next=mol.adj[current].find(w=>w!==previous&&!display.includes(w));
+    previous=current;current=next;
+   }
+  }
+ }
+ return coords;
+}
+const svgNS='http://www.w3.org/2000/svg';
+function svgElement(tag,attrs,parent,text){let n=document.createElementNS(svgNS,tag);Object.entries(attrs||{}).forEach(([k,v])=>n.setAttribute(k,String(v)));if(text!==undefined)n.textContent=text;(parent||$('#molSvg')).appendChild(n);return n}
+function drawMol(){
+ const mol=S.current;if(!mol)return;const svg=$('#molSvg');svg.replaceChildren();const coords=layout(mol);S.coords=coords;
+ const xs=coords.map(x=>x.x),ys=coords.map(x=>x.y);const minX=Math.min(...xs)-53,maxX=Math.max(...xs)+53,minY=Math.min(...ys)-55,maxY=Math.max(...ys)+48;
+ svg.setAttribute('viewBox',`${minX} ${minY} ${maxX-minX} ${maxY-minY}`);
+ let path=S.path,appliedPath=S.solved?S.solution.path:path,active=new Set(appliedPath||[]),sel=new Set(S.selected||[]),shownBranches=[];
+ if(S.hints&&S.stage>=2)shownBranches=S.branches;else if(S.solved)shownBranches=S.solution.branches;
+ const chosenEdges=new Set();function key(a,b){return [a,b].sort((x,y)=>x-y).join('-')}
+ if(S.stage===0&&S.hints&&!S.solved)for(let i=0;i<S.selected.length-1;i++)chosenEdges.add(key(S.selected[i],S.selected[i+1]));
+ const mainEdges=new Set();if(appliedPath){for(let i=0;i<appliedPath.length-1;i++)mainEdges.add(key(appliedPath[i],appliedPath[i+1]));if(mol.cyclic)mainEdges.add(key(appliedPath[0],appliedPath[appliedPath.length-1]));}
+ const lineLayer=svgElement('g',{},svg);
+ mol.edges.forEach(([a,b])=>{let cls='bond',k=key(a,b);
+ if(chosenEdges.has(k))cls+=' chosen';else if(mainEdges.has(k))cls+=' main';
+ else if(shownBranches.length){let g=shownBranches.findIndex(x=>x.nodes.includes(a)||x.nodes.includes(b));if(g>=0&&(S.solved||S.found.has(g)||S.activeBranch===g))cls+=` sub${(shownBranches[g].len-1)%3}`;else cls+=' dim'}
+ svgElement('line',{x1:coords[a].x,y1:coords[a].y,x2:coords[b].x,y2:coords[b].y,class:cls},lineLayer);
+ });
+ if(S.hints&&S.stage===1&&!S.current.cyclic&&!S.solved&&path){let a=coords[path[0]],b=coords[path[path.length-1]];
+ for(const [point,c,label] of [[a,'#3058bf','A'],[b,'#d97706','B']]){
+ svgElement('circle',{cx:point.x,cy:point.y,r:15,fill:c,stroke:'white','stroke-width':3},svg);
+ svgElement('text',{x:point.x,y:point.y+4,'text-anchor':'middle',class:'endlabel'},svg,label)
+ }}
+ if(S.current.cyclic&&S.hints&&S.stage===1&&!S.solved){
+  const pathPreview=ringOrder(S.current.ring.length,S.ringStart,S.ringClockwise);
+  S.current.ring.forEach((v,i)=>{const p=coords[v],ang=-Math.PI/2+2*Math.PI*i/S.current.ring.length;
+   svgElement('text',{x:p.x+29*Math.cos(ang),y:p.y+29*Math.sin(ang)+5,'text-anchor':'middle',class:'cnumber'},svg,String.fromCharCode(65+i));
+  });
+  pathPreview.forEach((v,i)=>{const p=coords[v],ang=-Math.PI/2+2*Math.PI*v/S.current.ring.length;
+   svgElement('text',{x:p.x-21*Math.cos(ang),y:p.y-21*Math.sin(ang)+4,'text-anchor':'middle',class:'ring-preview-num'},svg,String(i+1));
+  });
+ }
+ if((S.hints&&S.stage>=2)||S.solved){let chosen=S.solved?S.solution.path:S.path;
+ chosen.forEach((v,i)=>{const p=coords[v],idx=(S.current.displayPath||S.current.spine).indexOf(v),outward=idx>=0?(idx%2===0?1:-1):1;
+ const y=S.current.cyclic?p.y-24*Math.sin(-Math.PI/2+2*Math.PI*S.current.ring.indexOf(v)/S.current.ring.length):p.y+(outward*-25);const x=S.current.cyclic?p.x-24*Math.cos(-Math.PI/2+2*Math.PI*S.current.ring.indexOf(v)/S.current.ring.length):p.x;svgElement('text',{x,y,'text-anchor':'middle',class:'cnumber'},svg,String(i+1));
+ });
+ }
+ const atoms=svgElement('g',{},svg);
+ coords.forEach((p,i)=>{
+  const showSelect=S.hints&&S.stage===0&&!S.solved;
+  if(showSelect&&sel.has(i))svgElement('circle',{cx:p.x,cy:p.y,r:7,class:'carb-selected'},atoms);
+  else if(showSelect)svgElement('circle',{cx:p.x,cy:p.y,r:5,class:'carb-on'},atoms);
+  const circle=svgElement('circle',{cx:p.x,cy:p.y,r:S.hints?18:10,class:'carbon-hover',tabindex:S.hints&&!S.solved?'0':'-1',role:'button','aria-label':`Kohlenstoff-Atom ${i+1}`,style:S.hints&&!S.solved?'cursor:pointer':'cursor:default'},atoms);
+  circle.addEventListener('click',()=>chooseAtom(i));circle.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();chooseAtom(i)}})
+ });
+
+}
+
+function fireworks(){
+ const canvas=$('#fx'),ctx=canvas.getContext('2d');if(!ctx)return;const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ canvas.width=window.innerWidth*devicePixelRatio;canvas.height=window.innerHeight*devicePixelRatio;ctx.scale(devicePixelRatio,devicePixelRatio);
+ let w=window.innerWidth,h=window.innerHeight,parts=[],start=performance.now(),last=-1;
+ const colors=['#10b7be','#f8bb3d','#ee719a','#8166e5','#54cc81','#f5f5f5','#4eb8ff'];
+ function burst(cx,cy){for(let i=0;i<(reduce?40:100);i++){let a=Math.PI*2*i/100+Math.random()*.6,v=2.2+Math.random()*6;
+ parts.push({x:cx,y:cy,vx:Math.cos(a)*v,vy:Math.sin(a)*v,age:0,ttl:42+Math.random()*45,r:2+Math.random()*3,c:colors[Math.floor(Math.random()*colors.length)]})}}
+ function frame(t){let dt=Math.min(2,(t-(frame.last||t))/16.7);frame.last=t;ctx.clearRect(0,0,w,h);let sec=(t-start)/1000;
+ if(last<0&&sec>.15){burst(w*.5,h*.35);last=0}if(last===0&&sec>.65){burst(w*.28,h*.32);last=1}if(last===1&&sec>1.1){burst(w*.75,h*.35);last=2}
+ parts=parts.filter(p=>p.age<p.ttl);for(const p of parts){p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=.065*dt;p.vx*=.995;p.age+=dt;ctx.globalAlpha=Math.max(0,1-p.age/p.ttl);ctx.fillStyle=p.c;ctx.fillRect(p.x,p.y,p.r,p.r*1.5)}ctx.globalAlpha=1;
+ if(sec<3.7)requestAnimationFrame(frame);else ctx.clearRect(0,0,w,h)
+ }requestAnimationFrame(frame);
+}
+newRound();
+// Debug/test access: callable from developer tools, never changes saved game state.
+window.AlkanLabTest={makeMol,analyze,chooseOpts,parseName,graphSignature,explainWrong,pools:POOLS,roots:ROOTS,getState:()=>S,makeRing,ringOrder};
+</script>
+</body></html>
