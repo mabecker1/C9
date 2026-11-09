@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alkene &amp; Alkine – Nomenklaturtrainer</title>
+<style>
+:root{--bg:#f4f7fb;--paper:#fff;--ink:#17243a;--sub:#617089;--line:#dfe7f0;--teal:#087e89;--teal-soft:#e6f6f6;--orange:#d97706;--purple:#7854c8;--pink:#ca477d;--good:#14805e;--bad:#bf4545;--blue:#3058bf;--shadow:0 12px 32px rgba(25,50,92,.07)}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:radial-gradient(ellipse 70% 40% at 85% 0,#e8f7f9,transparent),var(--bg);color:var(--ink);font-family:Inter,'Segoe UI',Arial,sans-serif;line-height:1.45}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.47}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #6ab9c5;outline-offset:2px}.wrap{max-width:1240px;margin:auto;padding:24px 22px 36px}.top{display:flex;gap:16px;justify-content:space-between;align-items:center;margin-bottom:19px;flex-wrap:wrap}.eyebrow{font-size:11px;font-weight:850;color:var(--teal);letter-spacing:2px;text-transform:uppercase}.brand h1{font-size:clamp(22px,3vw,32px);letter-spacing:-.9px;margin:0;font-weight:850}.brand h1 span{color:var(--teal)}.brand p{margin:3px 0 0;color:var(--sub);font-size:13px}.topright{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.pill{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:99px;padding:5px;font-size:13px;gap:3px}.pill button{border:0;background:none;border-radius:99px;padding:8px 14px;color:#51627c;font-weight:750}.pill button[aria-pressed=true]{background:var(--teal);color:white}.smallbtn{border:1px solid var(--line);background:white;color:#2b415e;padding:11px 14px;border-radius:11px;font-weight:750}.layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:18px}.content{min-width:0}.panel{background:var(--paper);border:1px solid #e5ebf3;border-radius:19px;box-shadow:var(--shadow)}.molecule-panel{padding:23px 23px 16px}.sectionhead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.stepmark{display:inline-block;background:#edf2fc;color:#4d659a;border-radius:7px;font-size:11px;font-weight:850;padding:5px 9px;letter-spacing:.5px}.sectionhead h2{margin:8px 0 0;font-size:20px;letter-spacing:-.4px}.sectionhead p{margin:3px 0 0;color:var(--sub);font-size:13px}.molecule-svg{width:100%;height:clamp(235px,29vw,315px);display:block;overflow:visible;touch-action:manipulation}.molwrap{display:flex;align-items:center;justify-content:center;margin:0 0 2px;min-width:0}.bond{stroke:#283246;stroke-width:4.5;stroke-linecap:round}.bond.main{stroke:var(--teal);stroke-width:7}.bond.chosen{stroke:#17b5c0;stroke-width:8.5}.bond.sub0{stroke:var(--orange);stroke-width:6.5}.bond.sub1{stroke:var(--purple);stroke-width:6.5}.bond.sub2{stroke:var(--pink);stroke-width:6.5}.bond.dim{stroke:#b5c1d2;stroke-width:3}.carbon-hover{cursor:pointer;fill:transparent}.carbon-hover:hover,.carbon-hover:focus{fill:rgba(37,153,170,.12);stroke:rgba(37,153,170,.45);stroke-width:2}.carb-on{fill:white;stroke:#2995a4;stroke-width:2}.carb-selected{fill:#0ba7b1;stroke:#fff;stroke-width:2}.cnumber{font-size:15px;font-weight:800;fill:#1a66a7;paint-order:stroke;stroke:white;stroke-width:5;stroke-linejoin:round}.endlabel{font-size:12px;font-weight:900;fill:white}.empty-state{color:var(--sub)}.legend{min-height:26px;display:flex;flex-wrap:wrap;gap:13px;font-size:12px;color:var(--sub);border-top:1px dashed var(--line);padding:12px 0 0}.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}.answerpanel{padding:21px 23px 20px;margin-top:17px}.answerpanel label{font-weight:800;display:block;margin-bottom:9px;font-size:15px}.answerrow{display:flex;gap:9px}.answerrow input{flex:1;min-width:0;border:1.5px solid #d8e3ee;padding:13px 15px;border-radius:11px;font-size:18px;letter-spacing:.15px}.primary{background:var(--teal);color:white;border:1px solid var(--teal);border-radius:11px;padding:12px 18px;font-weight:800}.primary:hover:not(:disabled){background:#066b75}.secondary{background:white;color:var(--teal);border:1.5px solid #9ad4d7;border-radius:11px;padding:11px 15px;font-weight:800}.secondary:hover:not(:disabled){background:var(--teal-soft)}.subtext{font-size:12px;color:var(--sub);margin:8px 0 0}.feedback{display:none;border-radius:12px;margin-top:14px;padding:13px 15px;font-size:14px;border:1px solid transparent;line-height:1.55}.feedback.show{display:block}.feedback.good{background:#eaf8f1;color:#116344;border-color:#bfe8d3}.feedback.bad{background:#fff3f2;color:#953c3a;border-color:#fad0ce}.feedback.info{background:#eef5fe;color:#2a5385;border-color:#cee2fa}.feedback strong{display:block;margin-bottom:4px}.helppanel{margin-top:17px;padding:20px 23px}.helphead{display:flex;align-items:center;justify-content:space-between;gap:14px}.helphead h2{font-size:18px;margin:0 0 3px}.helphead p{font-size:13px;color:var(--sub);margin:0}.hintbody{border-top:1px solid var(--line);margin-top:17px;padding-top:16px;display:none}.hintbody.open{display:block}.hintstep{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:15px}.hintstep span{background:#edf1f7;color:#6a7991;border-radius:8px;padding:7px 11px;font-size:12px;font-weight:750}.hintstep span.now{background:var(--teal);color:white}.hintstep span.done{background:#e4f5ec;color:#26825f}.helpcontent h3{font-size:17px;margin:0 0 7px}.helpcontent p{color:#576881;margin:0 0 13px;font-size:14px}.helpsmall{color:var(--sub);font-size:12px}.counter{padding:9px 12px;border-radius:9px;background:#f3f6fa;color:#51637c;font-size:13px;font-weight:700;display:inline-block;margin:5px 0 12px}.choices{display:flex;flex-wrap:wrap;gap:9px}.choice{border:1.5px solid #d6e0ed;background:white;border-radius:10px;padding:10px 13px;font-weight:800;color:#405571}.choice:hover{border-color:#76b6c0;background:#f0fafa}.choice.active{background:var(--teal-soft);border-color:var(--teal);color:var(--teal)}.helprow{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:13px}.branch-edit{display:flex;gap:10px;flex-wrap:wrap;align-items:end;border-radius:12px;background:#f4f7fb;padding:13px;margin:8px 0}.branch-edit label{font-size:12px;font-weight:750;color:#546683;display:block;margin:0 0 5px}.branch-edit select,.builder select{border:1px solid #cfdce9;border-radius:9px;background:white;padding:9px 12px;font-weight:700;min-width:100px}.branch-edit .selectedname{font-weight:800;color:var(--teal)}.taglist{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}.tag{display:inline-flex;background:#eef6f5;border:1px solid #cae7e5;border-radius:9px;padding:7px 10px;font-size:13px;color:#1d6872;font-weight:750}.helpnote{border-left:3px solid var(--teal);background:#f0f8f8;padding:9px 12px;color:#365d6c;font-size:13px;margin-bottom:11px}.microfeedback{margin-top:10px;font-size:13px;color:#986027;min-height:20px;font-weight:650}.builder{display:grid;gap:9px}.builder-row{display:flex;flex-wrap:wrap;gap:9px;align-items:center;padding:9px 12px;border:1px solid var(--line);border-radius:11px;background:#fcfdff}.builder-row .itemloc{color:#526581;min-width:85px;font-weight:850}.builder-row .itemname{font-weight:850;min-width:64px}.builder-row .move{border:1px solid #d4e1ed;background:white;border-radius:8px;padding:6px 10px;color:#465e78}.builder-row select{min-width:80px}.preview{background:#edf8f8;padding:12px 15px;border-radius:11px;color:#165e68;margin:14px 0 4px;overflow-wrap:anywhere}.preview strong{font-size:18px;letter-spacing:.2px}.aside{min-width:0}.progresspanel{padding:21px 19px;text-align:center;position:relative;overflow:hidden}.progresspanel h2{text-align:left;margin:0;font-size:17px}.progresspanel .progress-sub{text-align:left;color:var(--sub);font-size:12px;margin:4px 0 2px}.tubecontainer{position:relative;height:290px;display:flex;justify-content:center;align-items:center}.tube{width:108px;height:218px;position:relative;border:6px solid #a2bcc6;border-top:0;border-radius:0 0 55px 55px;overflow:hidden;background:linear-gradient(100deg,#e2f2f7 0%,#fff 28%,#d3e6eb 100%);box-shadow:inset 6px 1px 8px rgba(44,78,90,.13),7px 5px 15px rgba(43,80,112,.1)}.tube.celebrate{animation:popglass .95s ease-in forwards;transform-origin:50% 65%}@keyframes popglass{0%{transform:scale(1);filter:brightness(1);opacity:1}35%{transform:scale(1.23) rotate(-3deg);filter:brightness(1.8);opacity:1}65%{transform:scale(1.35) rotate(4deg);filter:brightness(2.5);opacity:.65}100%{transform:scale(.65);filter:brightness(2);opacity:0}}.tube::before{content:"";position:absolute;width:120px;height:13px;left:-12px;top:0;z-index:4;border:5px solid #a2bcc6;border-radius:8px;background:linear-gradient(#fbffff,#c5dfe7);transform:translateY(-1px)}.tubelip{position:absolute;width:125px;height:17px;left:50%;top:33px;transform:translateX(-50%);border:5px solid #a2bcc6;border-radius:10px;background:#e5f3f7;z-index:6;box-shadow:0 2px 3px #e4eaf4}.liquid{position:absolute;bottom:0;left:0;right:0;height:0%;transition:height 1s cubic-bezier(.2,.9,.2,1);background:linear-gradient(95deg,#17b8c1,#24caa4 40%,#079594);border-radius:0 0 45px 45px;box-shadow:inset -12px 0 20px rgba(0,63,97,.18)}.liquid::before{content:"";position:absolute;top:-5px;height:10px;border-radius:50%;background:#52e1d5;left:0;right:0;opacity:.9}.shine{position:absolute;z-index:3;left:13px;top:18px;width:12px;height:160px;border-radius:30px;background:linear-gradient(180deg,rgba(255,255,255,.8),rgba(255,255,255,.08))}.bubble{position:absolute;bottom:-15px;border-radius:50%;background:rgba(255,255,255,.55);animation:rise 2.8s linear infinite;display:none}.liquid[style*="height: 0%"] .bubble{display:none}@keyframes rise{from{transform:translateY(0);opacity:0}20%{opacity:1}to{transform:translateY(-205px);opacity:0}}.tube-score{font-size:29px;font-weight:900;color:var(--teal);line-height:1}.tube-caption{font-size:12px;color:var(--sub);margin:5px 0 15px}.segbar{display:grid;grid-template-columns:repeat(8,1fr);gap:5px}.segbar span{height:10px;border-radius:50px;background:#e3ebf1}.segbar span.full{background:linear-gradient(90deg,#2ccab6,#0b98a7)}.info-panel{padding:19px;margin-top:17px}.info-panel h3{font-size:15px;margin:0 0 8px}.info-panel p{font-size:13px;line-height:1.55;color:var(--sub);margin:0 0 8px}.info-panel details{font-size:12px;color:#586a80;margin-top:11px}.info-panel summary{font-weight:800;cursor:pointer;color:#3e6470}.info-panel a{color:var(--teal)}.leveltag{background:#f4eee2;color:#97681d;border-radius:8px;font-size:11px;letter-spacing:.2px;padding:5px 8px;font-weight:850}.complete{display:none;text-align:center;position:absolute;inset:0;background:rgba(255,255,255,.96);border-radius:19px;z-index:10;align-items:center;justify-content:center;flex-direction:column;padding:20px}.complete.show{display:flex}.complete .big{font-size:60px;line-height:1}.complete h2{font-size:24px;margin:9px 0 4px}.complete p{color:var(--sub);font-size:14px}#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:99}footer{text-align:center;color:#8998ad;font-size:11px;margin-top:22px}body[data-stage="0"] #molSvg{cursor:crosshair}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}@media(max-width:880px){.layout{grid-template-columns:minmax(0,1fr)}.aside{display:grid;grid-template-columns:1fr 1fr;gap:16px}.info-panel{margin-top:0}.tubecontainer{height:185px}.tube{height:138px;width:76px;border-radius:0 0 40px 40px}.tubelip{top:19px;width:90px}.shine{height:90px}.progresspanel{padding:17px}.answerrow{flex-wrap:wrap}.molecule-svg{height:260px}}@media(max-width:570px){.wrap{padding:14px 10px 24px}.molecule-panel,.answerpanel,.helppanel{padding:17px 14px}.sectionhead h2{font-size:18px}.molecule-svg{height:235px}.answerrow .primary{width:100%}.aside{grid-template-columns:1fr}.progresspanel{display:grid;grid-template-columns:1fr 1fr;align-items:center}.progresspanel h2,.progresspanel .progress-sub{grid-column:1/-1}.tubecontainer{grid-row:3/6;height:145px}.tubelip{top:15px}.tube-score,.tube-caption,.segbar{grid-column:2}.tube-score{grid-row:3}.tube-caption{grid-row:4}.segbar{grid-row:5}.legend{font-size:11px}.helphead{align-items:flex-start}.helphead button{white-space:nowrap}}
+
+/* Kompakte Desktop-Darstellung: die ganze Arbeitsfläche bleibt im Viewport. */
+@media (min-width:881px) and (min-height:600px){
+ html,body{height:100%;overflow:hidden}
+ .wrap{height:100dvh;max-width:1500px;display:flex;flex-direction:column;padding:9px 16px 12px;overflow:hidden}
+ .top{flex:0 0 auto;margin-bottom:9px;gap:10px}
+ .brand{display:flex;align-items:center;gap:14px}.brand h1{font-size:20px;letter-spacing:-.3px}
+ .pill button{padding:7px 12px}.smallbtn{padding:9px 12px}
+ .layout{flex:1;min-height:0;grid-template-columns:minmax(0,1fr) 222px;gap:12px}
+ .content{min-height:0;display:flex;flex-direction:column;gap:9px}
+ .panel{border-radius:14px}
+ .molecule-panel{flex:1 1 auto;min-height:175px;padding:11px 16px 7px;display:flex;flex-direction:column;overflow:hidden}
+ .sectionhead{flex:none;align-items:center}.sectionhead h2{font-size:17px;margin:3px 0 0}.sectionhead p{font-size:11px;margin:0}
+ .stepmark{font-size:10px;padding:2px 7px}
+ .molwrap{flex:1;min-height:0;height:0;margin:0}.molecule-svg{width:100%;height:100%;min-height:0;overflow:visible}
+ .legend{min-height:19px;padding:5px 0 0;gap:9px;font-size:11px;flex:none}
+ .answerpanel{padding:10px 16px;flex:0 0 auto;margin:0}
+ .answerpanel label{margin:0 0 5px;font-size:13px}
+ .answerrow input{padding:7px 11px;font-size:16px}
+ .primary,.secondary{padding:8px 12px;border-radius:9px;font-size:13px}
+ .feedback{font-size:12px;line-height:1.3;padding:6px 11px;margin-top:7px}.feedback strong{margin-bottom:1px}
+ .helppanel{padding:10px 16px;flex:0 0 auto;min-height:0;margin:0;overflow:hidden}
+ .helphead h2{font-size:15px}.hintbody{margin-top:7px;padding-top:8px}
+ .hintstep{margin-bottom:8px;gap:4px}.hintstep span{padding:4px 7px;font-size:11px}
+ .helpcontent h3{font-size:14px;margin:0 0 4px}.helpcontent p{font-size:12px;margin:0 0 7px}
+ .counter{padding:5px 9px;font-size:12px;margin:3px 0 6px}
+ .choices{gap:6px}.choice{padding:6px 9px;font-size:12px}.helprow{margin-top:6px}
+ .branch-edit{padding:8px;margin:4px 0;gap:7px}.branch-edit select,.builder select{padding:5px 9px;font-size:12px;min-width:80px}
+ .builder{gap:5px}.builder-row{padding:5px 9px;gap:5px}.builder-row .move{padding:3px 8px}
+ .tag{font-size:11px;padding:4px 7px}.taglist{margin-top:5px}
+ .preview{padding:7px 10px;margin:7px 0 3px}.preview strong{font-size:15px}
+ .microfeedback{margin-top:5px;min-height:15px;font-size:12px}
+ .content:has(.hintbody.open) .molecule-panel{flex:0 1 40%;min-height:158px}
+ .content:has(.hintbody.open) .helppanel{flex:1 1 40%;display:flex;flex-direction:column;min-height:150px}
+ .hintbody.open{display:flex;flex-direction:column;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+ .aside{min-height:0}.progresspanel{padding:13px 10px}
+ .progresspanel h2{font-size:15px}
+ .tubecontainer{height:180px}.tube{width:79px;height:149px;border-width:5px;border-radius:0 0 44px 44px}
+ .tubelip{top:7px;width:94px;height:14px;border-width:4px}.shine{height:105px}
+ .tube-score{font-size:23px}.tube-caption{margin:3px 0 9px}
+ .segbar{grid-template-columns:repeat(10,1fr);gap:3px}.segbar span{height:7px}
+}
+@media(min-width:881px) and (max-height:670px){
+ .content:has(.hintbody.open) .molecule-panel{flex-basis:32%;min-height:125px}
+ .molecule-panel{min-height:125px}.tubecontainer{height:135px}.tube{height:120px;width:66px}.tubelip{top:2px;width:80px}
+}
+@media (min-width:881px) and (min-height:600px){
+ .content:has(#buildRows) .molecule-panel{flex-basis:25%;min-height:115px}
+ .content:has(#buildRows) .helppanel{flex-basis:57%}
+ .content:has(.branch-edit) .molecule-panel{flex-basis:30%;min-height:130px}
+ .content:has(.branch-edit) .helppanel{flex-basis:50%}
+}
+/* Kleine Ansichten dürfen scrollen, statt Inhalte abzuschneiden. */
+@media(max-width:880px),(max-height:599px){html,body{overflow:auto}.wrap{height:auto;min-height:100dvh}}
+@media(max-width:880px){.info-panel{display:none}.aside{display:block}.tubecontainer{height:150px}.tube{height:120px}.tubelip{top:9px}.molecule-svg{height:230px}}
+ .ring-preview-num{font-size:12px;fill:#66758c;font-weight:800;paint-order:stroke;stroke:white;stroke-width:3}
+
+/* V3: Desktop-Lernfläche mit nebeneinanderliegender Molekül- und Hilfespalte.
+   So bleiben Aufgabe, Namenseingabe, Hilfe und Reagenzglas gleichzeitig sichtbar. */
+@media (min-width:881px) and (min-height:600px) {
+ html,body{height:100%;overflow:hidden}
+ .wrap{width:100%;max-width:1650px;height:100dvh;padding:9px 13px 11px}
+ .top{margin-bottom:9px;min-height:37px}
+ .layout{
+  flex:1;min-height:0;display:grid;
+  grid-template-columns:minmax(0,1.18fr) minmax(345px,.98fr) clamp(160px,15vw,210px);
+  grid-template-rows:minmax(0,1fr) auto;
+  column-gap:10px;row-gap:9px;
+ }
+ .content{display:contents}
+ .molecule-panel{grid-column:1;grid-row:1;min-height:0!important;padding:12px 14px 8px;display:flex;flex-direction:column;overflow:hidden;flex:none!important}
+ .molecule-panel .sectionhead{flex:0 0 auto}
+ .molecule-panel .molwrap{flex:1 1 auto;min-height:0;height:0;margin:0}
+ .molecule-panel .molecule-svg{height:100%;min-height:0}
+ .answerpanel{grid-column:1;grid-row:2;min-height:0;align-self:end;padding:10px 13px;margin:0;flex:none}
+ .answerpanel .feedback{font-size:12px;line-height:1.25;padding:6px 10px;margin-top:7px}
+ .answerpanel .feedback strong{display:inline;margin:0 6px 0 0}
+ .answerpanel .helprow{margin-top:6px}
+ .helppanel{grid-column:2;grid-row:1 / span 2;min-height:0!important;margin:0;padding:12px 13px;display:flex;flex-direction:column;overflow:hidden;flex:none!important}
+ .helphead{flex:0 0 auto;gap:7px}
+ .helphead h2{font-size:14px;line-height:1.2}
+ .helphead .secondary{white-space:nowrap;padding:6px 8px;font-size:12px}
+ .hintbody.open{display:flex;flex:1 1 auto;flex-direction:column;min-height:0;margin-top:8px;padding-top:9px;overflow-y:auto}
+ .hintstep{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-bottom:8px;flex:0 0 auto}
+ .hintstep span{padding:4px 6px;font-size:11px;line-height:1.15}
+ .helpcontent h3{font-size:15px;line-height:1.25;margin:0 0 5px}
+ .helpcontent p{font-size:12px;line-height:1.3;margin:0 0 7px}
+ .helpcontent .helpsmall{margin-top:6px!important;font-size:11px}
+ .choices{gap:6px}.choice{padding:6px 9px;font-size:12px}
+ .branch-edit{padding:7px;margin:5px 0;gap:6px}
+ .branch-edit label{font-size:11px;margin-bottom:2px}
+ .branch-edit select,.builder select,.helpcontent select{font-size:12px;padding:5px 6px;min-width:72px}
+ .branch-edit .primary{padding:6px 9px}
+ .taglist{gap:5px;margin-top:5px}
+ .tag{padding:3px 6px;font-size:11px}
+ .counter{padding:4px 7px;margin:4px 0 6px}
+ .builder{gap:5px}.builder-row{padding:5px 7px;gap:5px}
+ .builder-row .itemloc{min-width:55px}
+ .builder-row .itemname{min-width:43px}
+ .preview{margin:7px 0 4px;padding:6px 9px}
+ .microfeedback{flex:0 0 auto;font-size:12px;line-height:1.25;margin-top:5px;min-height:0}
+ .aside{grid-column:3;grid-row:1 / span 2;min-height:0}
+ .progresspanel{height:100%;padding:13px 11px}
+ .tubecontainer{height:clamp(140px,31vh,235px)}
+ .tube{height:clamp(112px,25vh,175px);width:78px}
+ .tubelip{top:8px;width:90px}
+ .segbar{grid-template-columns:repeat(5,1fr);gap:5px}
+}
+/* Niedrige Desktop-Fenster: Platz für alle Hilfeschritte erhalten. */
+@media (min-width:881px) and (min-height:600px) and (max-height:740px) {
+ .wrap{padding:5px 10px 7px}
+ .top{margin-bottom:5px;min-height:34px}
+ .pill button{padding:5px 10px}
+ .smallbtn{padding:6px 9px}
+ .layout{row-gap:6px;column-gap:8px}
+ .molecule-panel{padding:7px 11px 5px}
+ .answerpanel{padding:7px 11px}
+ .answerpanel .answerrow input{padding:6px 9px}
+ .helppanel{padding:8px 10px}
+ .hintbody.open{margin-top:5px;padding-top:6px}
+ .hintstep{margin-bottom:5px}
+ .helpcontent p{font-size:11px;margin-bottom:5px}
+ .helpcontent h3{font-size:14px}
+ .microfeedback{font-size:11px}
+}
+
+
+/* Ergänzungen ausschließlich für die Fachfunktionen der Alkene und Alkine;
+   alle gemeinsamen Layout- und Gestaltungseigenschaften stammen unverändert aus Alkan V3. */
+.bond{fill:none}
+.bond.selected{stroke:#1aa8c0;stroke-width:5.8}
+.bond.target{stroke:var(--orange);stroke-width:6}
+.bond.branch{stroke:var(--purple);stroke-width:5}
+.bond.muted{stroke:#becbd7;stroke-width:3.1}
+.atom-hit{fill:transparent;cursor:default}
+.atom-hit.active{cursor:pointer}
+.atom-hit.active:hover,.atom-hit.active:focus{fill:rgba(5,143,156,.17);stroke:#64aeb7;stroke-width:1}
+.atom-point{fill:white;stroke:#a2c3ce;stroke-width:1.6}
+.atom-point.sel{fill:#14a8b9;stroke:white;stroke-width:2}
+.cnum{fill:#185a9b;font-size:13px;font-weight:900;stroke:white;stroke-width:4;paint-order:stroke;stroke-linejoin:round}
+.endpoint{fill:white;font-size:11px;font-weight:900}
+/* Die Interaktionsanweisung erscheint in der Hilfe und benötigt daher keinen eigenen Platz unter dem Molekül. */
+.molnote{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+/* Zusätzliche Eingabebausteine im selben V3-Design. */
+.choicebar{display:flex;flex-wrap:wrap;gap:9px;margin-top:8px}
+.hselect{border-radius:9px;background:white;border:1px solid #cadbe7;padding:6px 9px;color:#334b62;font-weight:800;max-width:100%;min-width:105px;font-size:12px}
+.selectline{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:7px 0}
+.selectline label{font-size:12px;color:#4b6179;font-weight:750}
+.info{padding:8px 10px;border-left:3px solid #60aeba;background:#eff8f8;border-radius:5px;color:#365d67;font-size:12px;margin-bottom:9px}
+.tinyhint{font-size:11px;color:var(--sub)}
+.buildline{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:6px 0;padding:6px;border-radius:9px;border:1px solid var(--line)}
+.buildline .move{padding:3px 7px;border:1px solid #cbdbe6;background:white;color:#52647a;border-radius:6px;font-weight:800}
+.buildline .groupname{font-size:12px;font-weight:800;flex:1}
+/* Sieben Denkphasen benötigen in der gleich großen V3-Hilfespalte zwei Reihen. */
+.hintstep{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+.hintstep span{min-width:0}
+/* Im Original sind vier Phasen; für sieben bleibt nur der Hilfebereich selbst scrollbar. */
+@media(min-width:881px) and (min-height:600px){
+ .hintbody.open{overflow-y:hidden}
+ .helpcontent{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+ .hintstep{margin-bottom:8px}
+ .choicebar{gap:6px;margin-top:6px}
+ .choice{padding:6px 9px;font-size:12px}
+ .selectline{margin:5px 0}
+ .hselect{font-size:12px;padding:5px 6px;min-width:85px}
+ .buildline{margin:4px 0;padding:5px 7px}
+ .preview{font-size:15px}
+}
+@media (min-width:881px) and (min-height:600px) and (max-height:740px){
+ .hintstep{gap:4px;margin-bottom:5px}
+ .hintstep span{font-size:10px;padding:3px 5px}
+ .choicebar{margin-top:4px;gap:5px}
+ .selectline{margin:3px 0}
+ .buildline{margin:3px 0;padding:4px 6px}
+}
+@media(max-width:880px),(max-height:599px){
+ .helpcontent{overflow:visible}
+ .hintstep{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+</style>
+</head>
+<body><canvas id="fx" aria-hidden="true"></canvas><div class="wrap">
+<header class="top"><div class="brand"><div class="eyebrow">⚗ CHEMIE · NOMENKLATUR</div><h1>Alkene &amp; Alkine</h1></div><div class="topright"><div class="pill" id="difficulty" aria-label="Schwierigkeitsgrad"><button data-level="easy" aria-pressed="true">Einfach</button><button data-level="medium" aria-pressed="false">Mittel</button><button data-level="hard" aria-pressed="false">Knifflig</button></div><button class="smallbtn" id="restart">↻ Neustart</button></div></header>
+<main class="layout"><div class="content">
+<section class="panel molecule-panel"><div class="sectionhead"><div><span class="stepmark" id="taskNo">AUFGABE 1 / 20</span><h2>Wie heißt dieses Molekül?</h2></div><span class="leveltag" id="typeTag">ALKEN</span></div><div class="molwrap"><svg id="molSvg" class="molecule-svg" role="img" aria-label="Skelettformel des zu benennenden Moleküls" viewBox="0 0 700 330"></svg></div><div class="molnote" id="molNote"></div></section>
+<section class="panel answerpanel"><form id="answerForm" autocomplete="off"><label for="answer">Dein IUPAC-Name</label><div class="answerrow"><input id="answer" type="text" spellcheck="false" autocapitalize="none" autocomplete="off" placeholder="z. B. (E)-4-Methylhex-2-en"><button type="submit" class="primary" id="verify">Überprüfen ✓</button></div></form><div id="feedback" class="feedback" role="status" aria-live="polite"></div><div class="helprow" id="afterCorrect" hidden><button class="primary" id="next">Nächstes Molekül →</button></div></section>
+<section class="panel helppanel"><div class="helphead"><h2>Hilfe: IUPAC-Name gemeinsam herleiten</h2><button class="secondary" id="helpToggle" aria-expanded="false">Hilfe öffnen</button></div><div class="hintbody" id="hintbody"><div class="hintstep" id="hintsteps"></div><div id="helpcontent" class="helpcontent"></div><div class="microfeedback" id="minifb" role="status" aria-live="polite"></div></div></section>
+</div><aside class="aside"><section class="panel progresspanel"><h2>Dein Reagenzglas</h2><div class="tubecontainer"><div class="tubelip"></div><div class="tube" id="tube"><div class="liquid" id="liquid"><span class="bubble" style="left:15%;width:9px;height:9px;animation-delay:.3s"></span><span class="bubble" style="left:60%;width:6px;height:6px;animation-delay:1.4s"></span><span class="bubble" style="left:43%;width:10px;height:10px;animation-delay:2.1s"></span></div><div class="shine"></div></div></div><div class="tube-score" id="scoreText">0 / 20</div><div class="tube-caption">Richtige Molekülnamen</div><div class="segbar" id="segbar"></div><div class="complete" id="complete"><div class="big">🎉</div><h2>Labor gemeistert!</h2><p>20 Moleküle richtig benannt!</p><button id="playAgain" class="primary">Neue Runde starten ↻</button></div></section></aside></main>
+</div>
+<script>
+'use strict';
+const $=q=>document.querySelector(q), NS='http://www.w3.org/2000/svg';
+const ROOT=['','Meth','Eth','Prop','But','Pent','Hex','Hept','Oct','Non','Dec','Undec','Dodec'];
+const GROUP=['','methyl','ethyl','propyl'];
+const MULT=['','', 'di','tri','tetra','penta'];
+const STEPS=['Hauptkette','Seitenketten','Nummerierung','Bindungspositionen','Zahlvorsätze','E/Z-Konfiguration','Name bauen'];
+const LEVELS={easy:'EINSTIEG',medium:'FORTGESCHRITTEN',hard:'EXPERTEN'};
+const shuffle=a=>{let x=[...a];for(let i=x.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]];}return x};
+const escapeH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sig=(a,b)=>a<b?`${a}-${b}`:`${b}-${a}`;
+const cmp=(a,b)=>{for(let i=0;i<Math.max(a.length,b.length);i++){let c=(a[i]??999)-(b[i]??999);if(c)return c;}return 0};
+const cap=s=>String(s).replace(/[a-zäöü]/i,m=>m.toUpperCase());
+const norm=s=>String(s).normalize('NFKC').trim().replace(/[‐‑‒–—−]/g,'-').replace(/\s+/g,'').toLowerCase().replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
+const loose=s=>norm(s).replace(/[-,]/g,'');
+let S={level:'easy',tasks:[],index:0,score:0,solved:false,hints:false,stage:0,selected:[],path:null,branches:[],branchIndex:0,dirChoice:0,ordered:[],multiEntries:[],multiIndex:0,locAnswers:{},countAnswers:{},ezEntries:[],ezIndex:0,ezAnswers:{},builderRoot:'',builderSuffix:'',builderOrder:[],task:null,best:null,coords:null};
+
+function makeMol(spec){
+ const {n,ds,ts,branches,ez}=spec;
+ const adj=Array.from({length:n},()=>[]),edges=[];
+ function add(a,b,order=1){const e={id:edges.length,a,b,order};edges.push(e);adj[a].push({v:b,e});adj[b].push({v:a,e});return e}
+ for(let i=0;i<n-1;i++)add(i,i+1,ds.includes(i+1)?2:ts.includes(i+1)?3:1);
+ for(const [p,len] of branches){let last=p-1;for(let k=0;k<len;k++){let next=adj.length;adj.push([]);add(last,next);last=next}}
+ const stereoByEdge={};for(const [pos,config] of Object.entries(ez))stereoByEdge[Number(pos)-1]=config;
+ return {spec,adj,edges,spine:Array.from({length:n},(_,i)=>i),ez:stereoByEdge,n};
+}
+function branchComponents(m,path){
+ const inP=new Set(path),bs=[];
+ for(let i=0;i<path.length;i++)for(const item of m.adj[path[i]]){
+  if(inP.has(item.v))continue;
+  let stack=[[item.v,path[i]]],nodes=[],straight=true;
+  while(stack.length){const [u,parent]=stack.pop();nodes.push(u);if(m.adj[u].filter(x=>!inP.has(x.v)).length>2)straight=false;for(const v of m.adj[u])if(v.v!==parent&&!inP.has(v.v)){if(v.e.order!==1)straight=false;stack.push([v.v,u])}}
+  bs.push({anchor:path[i],first:item.v,loc:i+1,len:nodes.length,nodes,straight});
+ }
+ return bs;
+}
+function pathEdges(path){return new Set(path.slice(1).map((v,i)=>sig(v,path[i])))}
+function pathInfo(m,path){
+ const bs=branchComponents(m,path);
+ if(bs.some(b=>!b.straight||b.len>3))return null;
+ const es=pathEdges(path);
+ if(m.edges.some(e=>e.order>1&&!es.has(sig(e.a,e.b))))return null;
+ const d=[],t=[];
+ for(let i=0;i<path.length-1;i++){let edge=m.adj[path[i]].find(x=>x.v===path[i+1])?.e;if(!edge)return null;if(edge.order===2)d.push(i+1);if(edge.order===3)t.push(i+1)}
+ const grouped=groupBranches(bs),locs=bs.map(x=>x.loc).sort((a,b)=>a-b);
+ return {path,bs,d,t,grouped,locs,alphaLoc:grouped.flatMap(g=>g.locs)};
+}
+function groupBranches(bs){let map=new Map();for(const b of bs){if(!map.has(b.len))map.set(b.len,[]);map.get(b.len).push(b.loc)}return [...map].map(([len,locs])=>({len,locs:locs.sort((a,b)=>a-b),name:GROUP[len],prefix:MULT[locs.length]})).sort((a,b)=>a.name.localeCompare(b.name,'de'))}
+function compareInfo(a,b){return b.path.length-a.path.length||b.bs.length-a.bs.length|| (a.d.length?cmp(a.d,b.d):cmp(a.t,b.t)) ||(a.d.length?cmp(a.t,b.t):0)||cmp(a.locs,b.locs)||cmp(a.alphaLoc,b.alphaLoc)}
+function enumerate(m){
+ let leaves=m.adj.map((v,i)=>v.length===1?i:-1).filter(i=>i>=0),out=[];
+ for(let i=0;i<leaves.length;i++)for(let j=i+1;j<leaves.length;j++){
+  let start=leaves[i],end=leaves[j],stack=[[start,-1,[start]]],path=null;
+  while(stack.length){let [v,parent,part]=stack.pop();if(v===end){path=part;break}for(const {v:u} of m.adj[v])if(u!==parent)stack.push([u,v,part.concat(u)])}
+  if(!path)continue;for(const p of [path,[...path].reverse()]){let data=pathInfo(m,p);if(data)out.push(data)}
+ }
+ out.sort(compareInfo);
+ return out;
+}
+function suffix(info){
+ const {d,t}=info,n=info.path.length;let base=ROOT[n].toLowerCase();base=base.charAt(0).toUpperCase()+base.slice(1);const useA=d.length>=2||t.length>=2;
+ if(useA)base+='a';
+ let ending='';if(d.length)ending+='-'+d.join(',')+'-'+(d.length===1?'en':MULT[d.length]+'en');
+ if(t.length)ending+='-'+t.join(',')+'-'+(t.length===1?'in':MULT[t.length]+'in');
+ return {base,ending};
+}
+function nameParts(m,info){
+ const g=info.grouped,sub=g.map((x,i)=>x.locs.join(',')+'-'+(i===0?cap((x.prefix||'')+x.name):(x.prefix||'')+x.name)).join('-');
+ const {base,ending}=suffix(info),root=sub?base.toLowerCase():base;
+ const stereoEntries=info.d.map(loc=>{const e=m.adj[info.path[loc-1]].find(x=>x.v===info.path[loc])?.e;return {loc,e,config:m.ez[e.id]||null}}).filter(x=>x.config);
+ let stereo='';if(stereoEntries.length)stereo=info.d.length===1?`(${stereoEntries[0].config})-`:`(${stereoEntries.map(x=>x.loc+x.config).join(',')})-`;
+ return {sub,base:root,ending,stereo,name:stereo+sub+root+ending};
+}
+function randomSpec(level,kind){
+ const profiles={easy:{n:[4,7],b:[0,2],groups:[1],},medium:{n:[6,9],b:[0,3],groups:[1,1,1,2]},hard:{n:[7,10],b:[1,4],groups:[1,1,2,2]}};
+ const p=profiles[level],R=(a,b)=>a+Math.floor(Math.random()*(b-a+1)),n=R(...p.n);
+ let types=kind==='d'?['d']:kind==='t'?['t']:kind==='dd'?['d','d']:kind==='tt'?['t','t']:kind==='dt'?['d','t']:kind==='ddd'?['d','d','d']:kind==='ddt'?['d','d','t']:['d','t','t'];
+ if(n-1 < types.length*2-1)return null;
+ let places=shuffle(Array.from({length:n-1},(_,i)=>i+1)),picked=[];
+ for(const type of types){let possible=places.filter(k=>!picked.some(x=>Math.abs(x.pos-k)<2));if(!possible.length)return null;let pos=possible[Math.floor(Math.random()*possible.length)];picked.push({pos,type})}
+ const ds=picked.filter(x=>x.type==='d').map(x=>x.pos).sort((a,b)=>a-b),ts=picked.filter(x=>x.type==='t').map(x=>x.pos).sort((a,b)=>a-b);
+ let eligible=[];
+ for(let at=2;at<n;at++){
+  // No side group on a multiple-bond carbon: all side chains remain saturated, unbranched,
+  // and every internal C=C is unambiguously E/Z-stereogenic.
+  if([...ds,...ts].some(x=>x===at||x===at-1))continue;
+  eligible.push(at);
+ }
+ const branchN=R(...p.b),branches=[];
+ for(let i=0;i<branchN;i++){
+  if(!eligible.length)break;
+  let at=eligible[R(0,eligible.length-1)],count=branches.filter(x=>x[0]===at).length;
+  if(count>=2)continue;
+  if(count&&Math.random()<.65)continue;
+  const len=p.groups[R(0,p.groups.length-1)];
+  if(len>=at&&at<=3)continue;
+  if(len>=n-at+1&&at>=n-2)continue;
+  branches.push([at,len]);
+ }
+ const ez={};for(let pos of ds){if(pos===1||pos===n-1)continue;ez[pos]=Math.random()<.5?'E':'Z'}
+ return {n,ds,ts,branches,ez};
+}
+function materialize(spec){
+ let m=makeMol(spec),options=enumerate(m);if(!options.length)return null;
+ let best=options[0];if(best.path.length!==spec.n||best.path.length>10)return null;
+ if(best.path.some(x=>x>=spec.n))return null; // keep drawn backbone the preferred parent
+ let pairs=options.filter(x=>compareInfo(x,best)===0);
+ const candidates=new Set(pairs.map(x=>nameParts(m,x).name));if(candidates.size!==1)return null;
+ // The original backbone must remain an appropriate (unoriented) parent path.
+ let original=pathInfo(m,m.spine);if(!original||original.path.length!==best.path.length)return null;
+ m.best=best;m.name=nameParts(m,best).name;
+ m.kind=spec.ds.length&&spec.ts.length?'ALKEN & ALKIN':spec.ds.length?'ALKEN':'ALKIN';
+ return m;
+}
+const QUOTAS={easy:{d:9,t:8,dd:2,dt:1},medium:{d:4,t:3,dd:5,dt:5,tt:2,ddt:1},hard:{d:1,t:1,dd:3,dt:5,tt:2,ddd:2,ddt:4,dtt:2}};
+function generatePool(level){
+ const tasks=[],names=new Set();for(let [kind,quota] of Object.entries(QUOTAS[level])){
+  let remaining=quota,tries=0;
+  while(remaining>0&&tries++<3000){let raw=randomSpec(level,kind);if(!raw)continue;let mol=materialize(raw);if(!mol||names.has(norm(mol.name)))continue;
+   names.add(norm(mol.name));tasks.push(mol);remaining--;
+  }
+  if(remaining)console.warn('Weniger Beispiele als geplant',level,kind,remaining);
+ }
+ return shuffle(tasks);
+}
+
+function edgeId(m,a,b){return m.adj[a].find(x=>x.v===b)?.e.id}
+function valence(m,i){return m.adj[i].reduce((n,x)=>n+x.e.order,0)}
+function calcCoords(m){
+ const n=m.n,L=67,ezIndex={};for(const [i,v] of Object.entries(m.spec.ez))ezIndex[+i-1]=v;
+ let best=null,bestScore=1e100;
+ for(let trial=0;trial<170;trial++){
+  let delta=Array(n-1).fill(0),angle=Array(n-1).fill(0),sign=()=>Math.random()<.5?-1:1;
+  for(let i=1;i<n-1;i++){
+   if(m.edges[i-1].order===3||m.edges[i].order===3)delta[i]=0;
+   else if(m.edges[i-1].order===2 && m.spec.ez[i]){delta[i]=m.spec.ez[i]==='Z'?delta[i-1]:-delta[i-1];if(delta[i]===0)delta[i]=sign()*Math.PI/3}
+   else delta[i]=sign()*Math.PI/3;
+   angle[i]=angle[i-1]+delta[i];
+  }
+  const pts=Array(m.adj.length);
+  pts[0]={x:0,y:0};for(let i=1;i<n;i++)pts[i]={x:pts[i-1].x+L*Math.cos(angle[i-1]),y:pts[i-1].y+L*Math.sin(angle[i-1])};
+  // A chain group and H at either double-bond end have a defined geometric relationship.
+  let stereoOK=true;for(const [key,v] of Object.entries(ezIndex)){
+   const j=+key;if(j<1||j>=n-2)continue;
+   const a=pts[j],b=pts[j+1],pre=pts[j-1],post=pts[j+2];
+   const cross=(u,w)=>u.x*w.y-u.y*w.x,vec=(p,q)=>({x:q.x-p.x,y:q.y-p.y}),one=cross(vec(a,b),vec(a,pre)),two=cross(vec(a,b),vec(b,post));
+   if((one*two>0?'Z':'E')!==v)stereoOK=false;
+  }
+  if(!stereoOK)continue;
+  const atCount=new Map();let ok=true;
+  for(const [at,len] of m.spec.branches){
+   const idx=at-1,v=pts[idx],vp=pts[idx-1],vn=pts[idx+1];
+   let ax=(v.x-vp.x)/L+(v.x-vn.x)/L,ay=(v.y-vp.y)/L+(v.y-vn.y)/L;
+   let al=Math.hypot(ax,ay);if(al<.1){ax=0;ay=1;al=1}ax/=al;ay/=al;
+   let used=atCount.get(idx)||0;atCount.set(idx,used+1);
+   if(used){let t=ax;ax=ay;ay=-t;}else if(m.spec.branches.filter(x=>x[0]===at).length>1){const ang=.36;[ax,ay]=[ax*Math.cos(ang)-ay*Math.sin(ang),ax*Math.sin(ang)+ay*Math.cos(ang)]}
+   let parent=idx,start=m.adj[idx].find(x=>x.v>=n && !pts[x.v])?.v;
+   if(start===undefined){ok=false;break}
+   let u=start,last=v;let vec={x:ax,y:ay};
+   for(let k=0;k<len;k++){
+    let p={x:last.x+L*vec.x,y:last.y+L*vec.y};pts[u]=p;
+    let next=m.adj[u].find(x=>x.v!==parent)?.v;
+    parent=u;u=next;last=p;
+    if(k===0&&len>1){let turn=trial%2===0?Math.PI/3:-Math.PI/3;vec={x:ax*Math.cos(turn)-ay*Math.sin(turn),y:ax*Math.sin(turn)+ay*Math.cos(turn)}}
+   }
+  }
+  if(!ok||pts.some(p=>!p))continue;
+  let penalty=0;
+  const isBonded=(i,j)=>m.adj[i].some(x=>x.v===j);
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+   if(isBonded(i,j))continue;
+   let dis=Math.hypot(pts[i].x-pts[j].x,pts[i].y-pts[j].y);if(dis<L*.66)penalty+=(L*.66-dis)**2*8+1500;
+  }
+  const crossSeg=(a,b,c,d)=>{const cross=(p,q,r)=>(q.x-p.x)*(r.y-p.y)-(q.y-p.y)*(r.x-p.x);return cross(a,b,c)*cross(a,b,d)<0&&cross(c,d,a)*cross(c,d,b)<0};
+  for(let i=0;i<m.edges.length;i++)for(let j=i+1;j<m.edges.length;j++){
+   let a=m.edges[i],b=m.edges[j];if([a.a,a.b].some(v=>v===b.a||v===b.b))continue;
+   if(crossSeg(pts[a.a],pts[a.b],pts[b.a],pts[b.b]))penalty+=6500;
+  }
+  const xs=pts.map(p=>p.x),ys=pts.map(p=>p.y),w=Math.max(...xs)-Math.min(...xs),h=Math.max(...ys)-Math.min(...ys);
+  const ratio=w/(h+40);penalty+=(ratio<1.3?(1.3-ratio)**2*1500:ratio>3.8?(ratio-3.8)**2*900:0);
+  penalty+=h*.4+w*.05;
+  if(pts[n-1].x<pts[0].x+L)penalty+=1100;
+  if(penalty<bestScore){best=pts;bestScore=penalty}
+ }
+ if(!best){console.warn('Geometrie ohne Optimierungsvariante',m.name);return Array.from({length:m.adj.length},(_,i)=>({x:i*50,y:(i%2)*30}));}
+ return best;
+}
+function makeSvg(tag,attrs,par,text){let node=document.createElementNS(NS,tag);for(let [k,v] of Object.entries(attrs||{}))node.setAttribute(k,String(v));if(text!==undefined)node.textContent=text;(par||$('#molSvg')).appendChild(node);return node}
+function drawMol(){
+ const m=S.task;if(!m)return;const svg=$('#molSvg');svg.replaceChildren();const pts=S.coords||(S.coords=calcCoords(m));const xs=pts.map(p=>p.x),ys=pts.map(p=>p.y);
+ const pad=52,lowX=Math.min(...xs)-pad,highX=Math.max(...xs)+pad,lowY=Math.min(...ys)-pad,highY=Math.max(...ys)+pad;
+ svg.setAttribute('viewBox',`${lowX} ${lowY} ${highX-lowX} ${highY-lowY}`);
+ const selEdges=pathEdges(S.selected),activePath=S.solved?S.best.path:S.path,mainEdges=activePath?pathEdges(activePath):new Set();
+ let target=-1,showBranch=null;
+ if(S.hints&&!S.solved&&S.stage===1&&S.branches.length)showBranch=S.branches[S.branchIndex];
+ if(S.hints&&!S.solved&&S.stage===3)target=S.multiEntries[S.multiIndex]?.e.id??-1;
+ if(S.hints&&!S.solved&&S.stage===5)target=S.ezEntries[S.ezIndex]?.e.id??-1;
+ const g=makeSvg('g',{},svg);
+ for(const e of m.edges){
+  let c='bond',k=sig(e.a,e.b);
+  if(S.solved)c+=mainEdges.has(k)?' main':' branch';
+  else if(showBranch&&(showBranch.nodes.includes(e.a)||showBranch.nodes.includes(e.b))&&!mainEdges.has(k))c+=' branch';
+  else if(e.id===target)c+=' target';
+  else if(S.hints&&S.stage===0&&selEdges.has(k))c+=' selected';
+  else if(S.hints&&S.stage>=1&&mainEdges.has(k))c+=' main';
+  else if(S.hints&&S.stage>=1&&!mainEdges.has(k))c+=' muted';
+  const p=pts[e.a],q=pts[e.b],dx=q.x-p.x,dy=q.y-p.y,dist=Math.hypot(dx,dy),nx=-dy/dist,ny=dx/dist;
+  if(e.order===1)makeSvg('line',{x1:p.x,y1:p.y,x2:q.x,y2:q.y,class:c},g);
+  else if(e.order===2)for(let s of [-1,1]){const d=s*4.6;makeSvg('line',{x1:p.x+nx*d,y1:p.y+ny*d,x2:q.x+nx*d,y2:q.y+ny*d,class:c},g)}
+  else {makeSvg('line',{x1:p.x,y1:p.y,x2:q.x,y2:q.y,class:c},g);for(const s of [-1,1]){let d=s*7.3,ex=dx/dist*6,ey=dy/dist*6;makeSvg('line',{x1:p.x+nx*d+ex,y1:p.y+ny*d+ey,x2:q.x+nx*d-ex,y2:q.y+ny*d-ey,class:c},g)}}
+ }
+ if(S.hints&&!S.solved&&S.stage===2&&S.path){const a=pts[S.path[0]],b=pts[S.path.at(-1)];[[a,'#2474b7','A'],[b,'#d57b18','B']].forEach(([p,col,letter])=>{makeSvg('circle',{cx:p.x,cy:p.y,r:13,fill:col,stroke:'white','stroke-width':2},svg);makeSvg('text',{x:p.x,y:p.y+3.8,'text-anchor':'middle',class:'endpoint'},svg,letter)})}
+ if((S.hints&&S.stage>=3)||S.solved){let path=S.solved?S.best.path:S.ordered;if(path&&path.length){for(let i=0;i<path.length;i++){
+    const id=path[i],p=pts[id],p0=pts[path[Math.max(0,i-1)]],p1=pts[path[Math.min(path.length-1,i+1)]];
+    let vx=p.x-(p0.x+p1.x)/2,vy=p.y-(p0.y+p1.y)/2,mag=Math.hypot(vx,vy);if(mag<4){vx=0;vy=-1;mag=1}
+    makeSvg('text',{x:p.x+vx/mag*23,y:p.y+vy/mag*23+4,'text-anchor':'middle',class:'cnum'},svg,String(i+1));
+   }}}
+ const isClick=S.hints&&!S.solved&&S.stage===0;
+ for(let i=0;i<pts.length;i++){let p=pts[i];if(isClick)makeSvg('circle',{cx:p.x,cy:p.y,r:S.selected.includes(i)?6:4,class:'atom-point'+(S.selected.includes(i)?' sel':'')},svg);
+  const hit=makeSvg('circle',{cx:p.x,cy:p.y,r:17,class:'atom-hit'+(isClick?' active':''),tabindex:isClick?'0':'-1',role:isClick?'button':'presentation','aria-label':`C-Atom ${i+1}`},svg);
+  if(isClick){hit.addEventListener('click',()=>chooseAtom(i));hit.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();chooseAtom(i)}})}
+ }
+ $('#molNote').textContent=isClick?'Klicke die C-Atome der Hauptkette der Reihe nach an.':'';
+}
+function chooseAtom(i){if(!S.hints||S.solved||S.stage!==0)return;let sel=S.selected;
+ if(sel.length&&sel.at(-1)===i){sel.pop();drawMol();updateCount();return}
+ if(sel.includes(i)){hintFb('Ein C-Atom darf nur einmal in einer Kette vorkommen.');return}
+ if(sel.length&&!S.task.adj[sel.at(-1)].some(e=>e.v===i)){hintFb('Die Hauptkette muss lückenlos verlaufen. Wähle ein direkt verbundenes C-Atom.');return}
+ sel.push(i);hintFb('');drawMol();updateCount();
+}
+function hintFb(s){$('#minifb').textContent=s}
+function openHelp(){S.hints=true;$('#hintbody').classList.add('open');$('#helpToggle').textContent='Hilfe schließen';$('#helpToggle').setAttribute('aria-expanded','true');renderHelp();drawMol()}
+function toggleHelp(){S.hints=!S.hints;$('#hintbody').classList.toggle('open',S.hints);$('#helpToggle').textContent=S.hints?'Hilfe schließen':'Hilfe öffnen';$('#helpToggle').setAttribute('aria-expanded',String(S.hints));if(S.hints)renderHelp();drawMol()}
+function nextStage(){S.stage++;hintFb('');renderHelp();drawMol()}
+function renderHelp(){
+ if(!S.hints)return;const chips=$('#hintsteps');chips.innerHTML=STEPS.map((t,i)=>`<span class="${S.stage===i?'now':S.stage>i?'done':''}">${i+1} · ${t}</span>`).join('');
+ const el=$('#helpcontent');hintFb('');
+ if(S.solved){el.innerHTML='<h3>Richtig gelöst!</h3><p>Du hast die Benennung geschafft. Die Hauptkette und die Seitenketten sind markiert.</p>';return}
+ if(S.stage===0){el.innerHTML=`<h3>1 · Hauptkette finden</h3><p>Wähle durch Anklicken eine möglichst lange, <strong>zusammenhängende</strong> Kette. <strong>Alle</strong> Doppel- und Dreifachbindungen müssen darin liegen.</p><div class="counter" id="chainCount">0 C-Atome ausgewählt</div><div class="helprow"><button class="secondary" id="undoChain">↶ Zurück</button><button class="secondary" id="clearChain">Löschen</button><button class="primary" id="checkChain">Kette prüfen →</button></div>`;
+  $('#undoChain').onclick=()=>{S.selected.pop();drawMol();updateCount()};$('#clearChain').onclick=()=>{S.selected=[];drawMol();updateCount()};$('#checkChain').onclick=checkChain;updateCount();
+ }else if(S.stage===1){let b=S.branches[S.branchIndex];if(!b){el.innerHTML='<h3>2 · Seitenketten</h3><p>Prüfe, ob neben deiner Hauptkette weitere C-Atome vorkommen.</p><div class="choicebar"><button class="choice" id="noBranches">Keine Seitenketten vorhanden</button></div>';$('#noBranches').onclick=nextStage;return}
+  el.innerHTML=`<h3>2 · Seitenketten benennen</h3><p>Die <strong>violett markierte</strong> Seitenkette gehört nicht zur Hauptkette. Bestimme ihren Namen durch Zählen ihrer C-Atome.</p><div class="counter">Seitenkette ${S.branchIndex+1} von ${S.branches.length}</div><div class="choicebar">${GROUP.slice(1).map((g,i)=>`<button class="choice" data-g="${i+1}">${cap(g)}</button>`).join('')}</div>`;
+  el.querySelectorAll('[data-g]').forEach(btn=>btn.onclick=()=>{let got=+btn.dataset.g;if(got!==b.len){hintFb('Zähle die C-Atome ausschließlich in der markierten Seitenkette.');return}S.branchIndex++;if(S.branchIndex>=S.branches.length)nextStage();else{renderHelp();drawMol()}});
+ }else if(S.stage===2){el.innerHTML=`<h3>3 · Hauptkette nummerieren</h3><p>Wähle das Kettenende, von dem aus gezählt werden soll. Nach deiner Regel erhalten <strong>Doppelbindungen</strong> die kleinsten Positionszahlen – vor Dreifachbindungen und Seitenketten.</p><div class="choicebar"><button class="choice" data-dir="0">Von A nach B</button><button class="choice" data-dir="1">Von B nach A</button></div>`;
+  el.querySelectorAll('[data-dir]').forEach(btn=>btn.onclick=()=>{const rev=+btn.dataset.dir===1,p=rev?[...S.path].reverse():[...S.path],info=pathInfo(S.task,p),other=pathInfo(S.task,[...p].reverse());if(compareInfo(info,other)>0){hintFb('Prüfe die Positionen der Doppelbindungen. Erst danach zählen Dreifachbindungen und Seitenketten.');return}S.ordered=p;S.multiEntries=getMultiEntries(S.task,p);S.ezEntries=getEzEntries(S.task,p);nextStage()});
+ }else if(S.stage===3){const b=S.multiEntries[S.multiIndex];if(!b){nextStage();return}el.innerHTML=`<h3>4 · Position der Mehrfachbindung</h3><p>Die <strong>orange markierte ${b.order===2?'Doppel':'Dreifach'}bindung</strong> beginnt an welchem nummerierten C-Atom? Es zählt die <strong>kleinere</strong> der beiden Nummern.</p><div class="counter">Mehrfachbindung ${S.multiIndex+1} von ${S.multiEntries.length}</div><div class="selectline"><label for="posPick">Beginn an C-Atom:</label><select class="hselect" id="posPick"><option value="">Position wählen …</option>${Array.from({length:S.path.length-1},(_,i)=>`<option value="${i+1}">${i+1}</option>`).join('')}</select></div><button class="primary" id="posCheck">Position prüfen →</button>`;
+  $('#posCheck').onclick=()=>{let pos=+$('#posPick').value;if(!pos){hintFb('Wähle zuerst eine Positionszahl.');return}if(pos!==b.loc){hintFb('Suche die beiden C-Atome dieser Mehrfachbindung und verwende die kleinere Nummer.');return}S.locAnswers[b.e.id]=pos;S.multiIndex++;if(S.multiIndex>=S.multiEntries.length)nextStage();else{renderHelp();drawMol()}};
+ }else if(S.stage===4){const types=[{order:2,name:'Doppelbindungen',count:S.multiEntries.filter(e=>e.order===2).length},{order:3,name:'Dreifachbindungen',count:S.multiEntries.filter(e=>e.order===3).length}].filter(t=>t.count>0);
+  el.innerHTML=`<h3>5 · Mehrfachbindungen zählen</h3><p>Welchen <strong>Zahlvorsatz</strong> brauchst du für gleiche Mehrfachbindungen? Denke auch an das zusätzliche <strong>„a“</strong> im Stammnamen, wenn mehrere gleiche Mehrfachbindungen vorkommen.</p>${types.map(t=>`<div class="selectline"><label for="count${t.order}">${t.name}:</label><select class="hselect" id="count${t.order}"><option value="?">Wählen …</option><option value="">kein Vorsatz</option><option value="di">di</option><option value="tri">tri</option><option value="tetra">tetra</option></select></div>`).join('')}<button class="primary" id="countCheck">Zahlvorsätze prüfen →</button>`;
+  $('#countCheck').onclick=()=>{for(let t of types){let val=$(`#count${t.order}`).value;if(val==='?'){hintFb('Wähle für jede Bindungsart einen Zahlvorsatz.');return}if(val!==(MULT[t.count]||'')){hintFb('„di“ bedeutet zwei, „tri“ bedeutet drei. Bei einer einzelnen Bindung steht kein Zahlvorsatz.');return}S.countAnswers[t.order]=val}nextStage()};
+ }else if(S.stage===5){const e=S.ezEntries[S.ezIndex];if(!e){nextStage();return}el.innerHTML=`<h3>6 · (E)/(Z)-Konfiguration</h3><p>Betrachte die <strong>orange markierte Doppelbindung</strong>. Haben beide C-Atome jeweils zwei unterschiedliche Reste, vergleiche die höher priorisierten Reste: <strong>Z</strong> = zusammen, <strong>E</strong> = entgegen.</p><div class="counter">Doppelbindung ${S.ezIndex+1} von ${S.ezEntries.length}</div><div class="choicebar"><button class="choice" data-ez="E">(E)</button><button class="choice" data-ez="Z">(Z)</button><button class="choice" data-ez="none">keine Angabe</button></div>`;
+  el.querySelectorAll('[data-ez]').forEach(btn=>btn.onclick=()=>{const val=btn.dataset.ez,expected=e.config||'none';if(val!==expected){hintFb(val==='none'?'Prüfe, ob auf beiden Seiten der Doppelbindung tatsächlich unterschiedliche Reste hängen.':'Achte darauf, welche beiden Reste nach Priorität verglichen werden. Gleichseitig = Z, gegenüber = E.');return}S.ezAnswers[e.e.id]=val;S.ezIndex++;if(S.ezIndex>=S.ezEntries.length)nextStage();else{renderHelp();drawMol()}});
+ }else if(S.stage===6){renderBuilder()}
+}
+function updateCount(){const n=$('#chainCount');if(n)n.textContent=`${S.selected.length} C-Atome ausgewählt`}
+function checkChain(){if(S.selected.length<3){hintFb('Diese Kette ist noch sehr kurz.');return}let keys=pathEdges(S.selected);let unsats=S.task.edges.filter(e=>e.order>1);if(unsats.some(e=>!keys.has(sig(e.a,e.b)))){hintFb('Mindestens eine Mehrfachbindung fehlt in deiner Kette.');return}
+ if(S.selected.length<S.best.path.length){hintFb('Du kannst die Kette noch verlängern, ohne eine Mehrfachbindung zu verlieren.');return}
+ if(S.selected.length>S.best.path.length){hintFb('Prüfe, ob die markierten C-Atome ohne Abzweigung verbunden sind.');return}
+ const bs=branchComponents(S.task,S.selected);if(bs.length<S.best.bs.length){hintFb('Bei gleich langen Hauptketten ist eine Kette mit mehr Seitenketten zu bevorzugen.');return}
+ S.path=[...S.selected];S.branches=bs;S.branchIndex=0;nextStage();
+}
+function getMultiEntries(m,path){let e=[];for(let i=0;i<path.length-1;i++){const edge=m.adj[path[i]].find(x=>x.v===path[i+1])?.e;if(edge.order>1)e.push({e:edge,order:edge.order,loc:i+1})}return e.sort((a,b)=>a.loc-b.loc)}
+function getEzEntries(m,path){return getMultiEntries(m,path).filter(x=>x.order===2).map(x=>({...x,config:m.ez[x.e.id]||null}))}
+function suffixChoices(m,info){let yes=suffix(info).ending,d=info.d,t=info.t;let wrong=[];
+ if(d.length){wrong.push('-'+d.map(p=>Math.min(info.path.length-1,p+1)).join(',')+'-'+(d.length>1?MULT[d.length]:'')+'en'+(t.length?'-'+t.join(',')+'-'+(t.length>1?MULT[t.length]:'')+'in':''));wrong.push('-'+d.join(',')+'-'+(d.length>1?MULT[d.length]:'')+'in'+(t.length?'-'+t.join(',')+'-en':''))}
+ else wrong.push('-'+t.map(p=>Math.min(info.path.length-1,p+1)).join(',')+'-'+(t.length>1?MULT[t.length]:'')+'in');
+ if(t.length)wrong.push('-'+t.join(',')+'-'+(t.length>1?MULT[t.length]:'')+'in'+(d.length?'-'+d.join(',')+'-en':''));
+ if(d.length>1||t.length>1)wrong.push(yes.replace('di','').replace('tri',''));
+ else wrong.push(yes.replace('en','in').replace('in-in','in-en'));
+ return shuffle([yes,...shuffle([...new Set(wrong.filter(x=>x&&x!==yes))]).slice(0,3)]);
+}
+function renderBuilder(){const el=$('#helpcontent'),info=pathInfo(S.task,S.ordered);if(!S.builderOrder.length)S.builderOrder=info.grouped.map(g=>({...g})).reverse();
+ const n=S.path.length,roots=[n-1,n,n+1].filter(x=>x>=3&&x<=12);let rootOptions=shuffle(roots);
+ if(!S.builderOptions){S.builderOptions={roots:rootOptions,suffixes:suffixChoices(S.task,info)}}
+ el.innerHTML=`<h3>7 · Namen zusammenbauen</h3><p>Setze deine bisherigen Entscheidungen zum Namen zusammen. Wähle den Stamm, die Endung(en) und ordne verschiedene Seitenketten <strong>alphabetisch</strong>. Dann prüfe deine Vorschau.</p><div class="selectline"><label for="rootPick">Stammname:</label><select id="rootPick" class="hselect"><option value="">Wählen …</option>${S.builderOptions.roots.map(x=>`<option value="${x}">${ROOT[x].toLowerCase()}${(info.d.length>1||info.t.length>1)?'a':''}</option>`).join('')}</select></div><div class="selectline"><label for="suffixPick">Endung(en):</label><select id="suffixPick" class="hselect"><option value="">Wählen …</option>${S.builderOptions.suffixes.map(x=>`<option value="${escapeH(x)}">${escapeH(x)}</option>`).join('')}</select></div><div id="buildGroups"></div><div class="preview" id="buildPreview">…</div><button class="primary" id="checkBuild">Name übernehmen →</button>`;
+ $('#rootPick').value=S.builderRoot;$('#suffixPick').value=S.builderSuffix;
+ $('#rootPick').onchange=e=>{S.builderRoot=e.target.value;updateBuildPreview()};$('#suffixPick').onchange=e=>{S.builderSuffix=e.target.value;updateBuildPreview()};$('#checkBuild').onclick=checkBuilder;
+ drawBuilderGroups();updateBuildPreview();
+}
+function drawBuilderGroups(){const node=$('#buildGroups');if(!node)return;node.innerHTML=S.builderOrder.length?S.builderOrder.map((g,i)=>`<div class="buildline"><span class="groupname">${g.locs.join(',')}-${cap((g.prefix||'')+g.name)}</span><button class="move" data-up="${i}" ${i===0?'disabled':''}>↑</button><button class="move" data-down="${i}" ${i===S.builderOrder.length-1?'disabled':''}>↓</button></div>`).join(''):'<div class="tinyhint">Keine Seitenketten im Namen.</div>';
+ node.querySelectorAll('[data-up]').forEach(b=>b.onclick=()=>{let i=+b.dataset.up;[S.builderOrder[i-1],S.builderOrder[i]]=[S.builderOrder[i],S.builderOrder[i-1]];drawBuilderGroups();updateBuildPreview()});
+ node.querySelectorAll('[data-down]').forEach(b=>b.onclick=()=>{let i=+b.dataset.down;[S.builderOrder[i+1],S.builderOrder[i]]=[S.builderOrder[i],S.builderOrder[i+1]];drawBuilderGroups();updateBuildPreview()});
+}
+function composedName(){const info=pathInfo(S.task,S.ordered);let {stereo}=nameParts(S.task,info),root=S.builderRoot?ROOT[+S.builderRoot]+(info.d.length>1||info.t.length>1?'a':''):'';
+ let sub=S.builderOrder.map((g,i)=>g.locs.join(',')+'-'+(i===0?cap((g.prefix||'')+g.name):(g.prefix||'')+g.name)).join('-');
+ if(sub)root=root.toLowerCase();return stereo+sub+root+S.builderSuffix;
+}
+function updateBuildPreview(){let node=$('#buildPreview');if(node)node.textContent=composedName()||'…'}
+function checkBuilder(){if(!S.builderRoot||!S.builderSuffix){hintFb('Wähle Stammname und Endung(en) aus.');return}let text=composedName();if(norm(text)!==norm(S.task.name)){
+  let trueInfo=pathInfo(S.task,S.ordered),correct=suffix(trueInfo);
+  if(+S.builderRoot!==trueInfo.path.length){hintFb('Zähle die C-Atome in deiner Hauptkette für den Stammnamen.');return}
+  if(S.builderSuffix!==correct.ending){hintFb('Überprüfe Positionszahlen, Zahlvorsätze, „a“ im Stamm und die Reihenfolge „en“ vor „in“.');return}
+  hintFb('Überprüfe die alphabetische Reihenfolge verschiedener Seitenketten (ohne di/tri).');return;
+ }
+ $('#answer').value=text;hintFb('Der Name wurde ins Antwortfeld übernommen. Prüfe ihn dort, um das Reagenzglas zu füllen.');$('#answer').focus();
+}
+function firstNameLetterIsUpper(input){let full=String(input).trim();const descriptor=full.match(/^\(([^)]*)\)-/);if(descriptor&&/[ez]/.test(descriptor[1]))return false;let s=full.replace(/^\((?:[EZ]|(?:\d+[EZ],)*\d+[EZ])\)-/,'').replace(/^[\d,\s-]*/,'');const match=s.match(/[A-Za-zÄÖÜäöü]/);return Boolean(match&&match[0]===match[0].toUpperCase())}
+function wrongFeedback(input){
+ const m=S.task,corr=m.name,base=norm(input),answer=norm(corr);
+ if(!base)return ['Noch kein Name','Trage einen Molekülnamen ein oder nutze die Hilfe.'];
+ if(base===answer&&!firstNameLetterIsUpper(input))return ['Großschreibung','Schreibe den ersten Buchstaben des eigentlichen Molekülnamens sowie E und Z in Konfigurationsangaben groß.'];
+ if(loose(input)===loose(corr))return ['Zeichensetzung','Verwende Kommata zwischen Positionszahlen und Bindestriche vor den Seitenketten sowie zwischen Stammname, Position und Endung.'];
+ const stereoPattern=/^\((?:[ez]|(?:\d+[ez],)*\d+[ez])\)-/i;
+ const expectedStereo=(corr.match(stereoPattern)||[])[0]||'',userStereo=(input.match(stereoPattern)||[])[0]||'';
+ if(norm(input.replace(stereoPattern,''))===norm(corr.replace(stereoPattern,''))){
+  if(expectedStereo&&!userStereo)return ['(E)/(Z) fehlt','Eine oder mehrere innere Doppelbindungen besitzen verschiedene Reste an beiden C-Atomen. Bestimme ihre räumliche Konfiguration.'];
+  if(!expectedStereo&&userStereo)return ['(E)/(Z) nicht erforderlich','Bei einer endständigen Doppelbindung mit zwei gleichen Resten (z. B. zwei H) ist keine E/Z-Konfiguration möglich.'];
+  return ['(E)/(Z) prüfen','Vergleiche an beiden Doppelbindungs-C-Atomen die höher priorisierten Reste: gleiche Seite = Z, gegenüberliegend = E. Bei mehreren Doppelbindungen sind Positionszahlen nötig.'];
+ }
+ const reverse=pathInfo(m,[...S.best.path].reverse());if(reverse&&norm(nameParts(m,reverse).name)===base)return ['Nummerierungsrichtung','Du hast von der anderen Seite nummeriert. In dieser Übung erhalten Doppelbindungen vor Dreifachbindungen möglichst kleine Positionszahlen.'];
+ if(!/(?:en|in)$/.test(base))return ['Endung prüfen','Alkene enden auf „-en“, Alkine auf „-in“. Bei mehreren Bindungen gelten „-dien“, „-diin“ usw.; bei beiden Bindungsarten steht „en“ vor „in“.'];
+ const meta=S.best,substr=norm(input.replace(stereoPattern,''));
+ const starts=ROOT.slice(3).map(x=>x.toLowerCase()).sort((a,b)=>b.length-a.length),roots=starts.filter(r=>substr.includes(r));
+ if(roots.length&&!roots.some(x=>x===ROOT[meta.path.length].toLowerCase()))return ['Stammkette prüfen','Zähle die C-Atome der längsten Kette, die sämtliche Doppel- und Dreifachbindungen enthält. Auch ein Knick kann zur Hauptkette gehören.'];
+ if((meta.d.length>1||meta.t.length>1)&&substr.includes(ROOT[meta.path.length].toLowerCase()+'-'))return ['Stammname bei mehreren Bindungen','Bei mehrfach vorkommenden Doppel- oder Dreifachbindungen bleibt das „a“ im Stammnamen erhalten: etwa „Hexa-…-dien“ statt „Hex-…-dien“.'];
+ if(meta.d.length&&meta.t.length&&substr.indexOf('in-')>=0&&substr.indexOf('en')>substr.indexOf('in-'))return ['„en“ vor „in“','Im kombinierten Namen steht die Endung für Doppelbindungen vor der für Dreifachbindungen – auch wenn anders nummeriert wird.'];
+ if(meta.d.length>=2&&!/dien|trien|tetraen/.test(substr))return ['Zahlvorsatz der Doppelbindungen','Mehrere Doppelbindungen werden mit di-, tri- oder tetra- gekennzeichnet. Jede benötigt eine Positionszahl.'];
+ if(meta.t.length>=2&&!/diin|triin|tetrain/.test(substr))return ['Zahlvorsatz der Dreifachbindungen','Mehrere Dreifachbindungen benötigen di-, tri- usw. sowie alle Positionszahlen.'];
+ if(/methyl|ethyl|propyl/.test(substr)&&meta.grouped.length){
+  let g=meta.grouped.map(x=>x.name);if(g.length>1){let order=g.map(x=>substr.indexOf(x)).filter(x=>x>=0);if(order.length===g.length&&order.some((x,i)=>i>0&&x<order[i-1]))return ['Alphabetische Reihenfolge','Unterschiedliche Seitenketten werden alphabetisch geordnet; di-, tri- und tetra- werden dabei nicht mitgezählt.'];}
+ }
+ const userNums=(substr.match(/\d+/g)||[]).map(Number);if(userNums.length&&meta.d.length)return ['Positionen kontrollieren','Die Position einer Mehrfachbindung ist die Nummer ihres ersten C-Atoms. Prüfe die Nummerierungsrichtung: Doppelbindungen haben hier Vorrang vor Dreifachbindungen und Seitenketten.'];
+ return ['Name noch einmal prüfen','Kontrolliere nacheinander die Hauptkette, Seitenketten, Nummerierung, Mehrfachbindungspositionen, Zahlvorsätze und schließlich gegebenenfalls (E)/(Z).'];
+}
+function verify(e){if(e)e.preventDefault();if(S.solved)return;let val=$('#answer').value.trim();let target=S.task.name;
+ if(norm(val)===norm(target)&&firstNameLetterIsUpper(val)){
+  S.solved=true;S.score++;$('#feedback').className='feedback show good';$('#feedback').innerHTML='<strong>Richtig!</strong> '+escapeH(target)+' · Gut erkannt!';$('#answer').disabled=true;$('#verify').disabled=true;
+  $('#afterCorrect').hidden=false;$('#next').textContent=S.score===20?'Neue Runde →':'Nächstes Molekül →';$('#scoreText').textContent=S.score+' / 20';$('#liquid').style.height=(S.score*5)+'%';renderSegments();if(S.hints)renderHelp();drawMol();if(S.score===20){$('#tube').classList.add('celebrate');fireworks();$('#complete').classList.add('show')}
+ }else{
+  let [title,msg]=wrongFeedback(val);$('#feedback').className='feedback show bad';$('#feedback').innerHTML='<strong>'+escapeH(title)+'</strong> '+escapeH(msg);
+ }
+}
+function renderSegments(){let node=$('#segbar');node.innerHTML=Array.from({length:20},(_,i)=>`<span class="${i<S.score?'full':''}"></span>`).join('')}
+function loadTask(){
+ S.task=S.tasks[S.index];S.best=S.task.best;S.coords=null;S.solved=false;S.hints=false;S.stage=0;S.selected=[];S.path=null;S.branches=[];S.branchIndex=0;S.ordered=[];S.multiEntries=[];S.multiIndex=0;S.locAnswers={};S.countAnswers={};S.ezEntries=[];S.ezIndex=0;S.ezAnswers={};S.builderRoot='';S.builderSuffix='';S.builderOrder=[];S.builderOptions=null;
+ $('#taskNo').textContent=`AUFGABE ${S.index+1} / 20`;$('#typeTag').textContent=S.task.kind;$('#answer').value='';$('#answer').disabled=false;$('#verify').disabled=false;$('#afterCorrect').hidden=true;$('#feedback').className='feedback';$('#feedback').textContent='';$('#hintbody').classList.remove('open');$('#helpToggle').textContent='Hilfe öffnen';$('#helpToggle').setAttribute('aria-expanded','false');$('#helpcontent').innerHTML='';drawMol();
+}
+function newRound(level=S.level){S.level=level;S.tasks=generatePool(level);if(S.tasks.length!==20)console.error('Ungültige Rundengröße',S.tasks.length,level);S.index=0;S.score=0;$('#tube').classList.remove('celebrate');$('#liquid').style.height='0%';$('#complete').classList.remove('show');$('#scoreText').textContent='0 / 20';renderSegments();document.querySelectorAll('[data-level]').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.level===level)));loadTask()}
+function nextTask(){if(S.score>=20){newRound();return}if(!S.solved)return;S.index++;if(S.index>=S.tasks.length){newRound();return}loadTask()}
+function fireworks(){const canvas=$('#fx'),ctx=canvas.getContext('2d');if(!ctx)return;let w=innerWidth,h=innerHeight,dpr=Math.min(devicePixelRatio||1,2);canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+ let parts=[],start=performance.now(),last=-1;const col=['#10bfc6','#f8c34c','#f278ad','#9070db','#5fd69b','#4fa7f0'];const burst=(x,y)=>{for(let i=0;i<100;i++){let a=Math.random()*Math.PI*2,v=1+Math.random()*6;parts.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,life:45+Math.random()*45,age:0,c:col[i%col.length]})}};
+ function frame(t){let sec=(t-start)/1000;ctx.clearRect(0,0,w,h);if(last<0&&sec>.12){burst(w*.45,h*.33);last=0}if(last===0&&sec>.65){burst(w*.25,h*.35);last=1}if(last===1&&sec>1.1){burst(w*.73,h*.3);last=2}for(const p of parts){p.x+=p.vx;p.y+=p.vy;p.vy+=.07;p.age++;if(p.age>p.life)continue;ctx.globalAlpha=1-p.age/p.life;ctx.fillStyle=p.c;ctx.fillRect(p.x,p.y,3.5,4.5)}ctx.globalAlpha=1;parts=parts.filter(p=>p.age<p.life);if(sec<3.5)requestAnimationFrame(frame)}requestAnimationFrame(frame)
+}
+$('#answerForm').addEventListener('submit',verify);$('#next').onclick=nextTask;$('#restart').onclick=()=>newRound();$('#playAgain').onclick=()=>newRound();$('#helpToggle').onclick=toggleHelp;document.querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>newRound(b.dataset.level));
+newRound();
+window.AlkenAlkinLabTest={getState:()=>S,makeMol,materialize,enumerate,pathInfo,compareInfo,nameParts,generatePool,calcCoords,wrongFeedback,suffix,firstNameLetterIsUpper,loadTask,newRound,verify};
+</script></body></html>
